@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="headerM">
+        <div class="container">           
+            <img src="resources/Logo.svg" alt="logo do site">                          
+
+            <form action="./">
+                <input class="input-busca" type="search" name="busca"  placeholder="Busque por algo">
+
+            </form>
+
+            <div class="profile">
+                <img src="resources/Photo.png" alt="foto do usuário">
+                <span>Harry</span>
+            </div>
+        </div>
+
+        
+    </header>
+    <main>
+            
+        <nav class="container">
+            <ul>
+                <li class="titulo-menu">Menu</li>
+                <li class="menu">
+                    <div class="rectangle37">
+                        <img src="resources/icon_code.svg" alt="icone codigo">
+                    </div>
+
+                    <a href="EditorCodigo">Editor de código</a>
+                </li>
+
+
+
+                <li class="menu">
+                    <div class="rectangle37">
+                        <img  src="resources/icon_users.svg" alt="icone comunidade"> 
+                        
+                    </div>
+                    <a href="Comunidade">Comunidade</a>
+                                   
+                </li>
+            </ul>            
+
+            <div>
+                <ul>
+                    <li class="titulo-menu">Seu projeto</li>
+                    <form class="meu-projeto" action="./">
+                        <li>                        
+                            <input class="projeto" type="text" name="nome-projeto" placeholder="Nome do seu projeto">
+                        </li>
+                        <li>
+                            <input class="projeto" id="descricao-projeto" type="text" name="descricao-projeto" placeholder="Descrição do seu projeto">
+                        </li>
+                        <li class="titulo-menu">Personalização</li>
+                        <li>
+                            <fieldset class="linguagem">
+                                <select class="linguagem" name="selecao-linguagem">
+                                    <option value="">JavaScript</option>
+                                    <option value="">Java</option>
+                                    <option value="">Python</option>
+                                </select>
+                            </fieldset>
+                        </li>
+                        <li >  
+                            <div class="rectangle-div">  
+                                 <div class="rectangle30"></div>
+                            </div> 
+                        </li>
+
+                        <li>
+                            <input class="projeto" id="input-salvar" type="submit" value="Salvar Projeto">
+                        </li>
+                    </form>   
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="div-code">        
+            <div class="code">    
+                <div class="code_editor">                        
+                    <img class="ellipse" src="resources/mac_buttons.svg" alt="botao mac">
+                    
+                    <div class="my-code">
+                        <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => <br> accum[key], obj) <br><br> const compose = (...fns) => res => fns.reduce((accum, next) => next(accum),<br> res)<br><br> const unfold = (f, seed) => { <br>const go = (f, seed, acc) => { <br>const res = f(seed)<br> return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>} <br>return go(f, seed, [])<br> }</p>
+                        
+                    </div>
+                </div>                    
+            </div>
+            <input class="btn" type="button" value="Visualizar com o highlight">
+        </div>
+        
+    </main>
+    
+</body>
+</html>
