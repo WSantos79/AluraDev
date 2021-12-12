@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="comunidade.css">
+    <link rel="stylesheet" media="(max-width: 480px)" href="altura-max480.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
     <title>Comunidade - Alura Dev</title>
 </head>
 <body>
@@ -57,11 +60,25 @@
                         <img class="ellipse" src="resources/mac_buttons.svg" alt="botao mac">
                         
                         <div class="my-code">
-                            <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => <br> accum[key], obj) <br><br> const compose = (...fns) => res => fns.reduce((accum, next) => next(accum),<br> res)<br><br> const unfold = (f, seed) => { <br>const go = (f, seed, acc) => { <br>const res = f(seed)<br> return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>} <br>return go(f, seed, [])<br> }</p>
-                            
-                        </div>
+                            <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key)<br> => accum[key], obj)<br><br>
+
+                                const compose = (...fns) => res => fns.reduce((accum, next)<br> => next(accum), res)<br><br>
+                                
+                                const unfold = (f, seed) => {<br>
+                                  const go = (f, seed, acc) => {<br>
+                                    const res = f(seed)<br>
+                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc<br>
+                                  }<br>
+                                  return go(f, seed, [])<br>
+                                }</p>                            
+                        </div>                       
                     </div>                    
                 </div>
+                <ul>
+                    <li>Título do projeto</li>
+                    <li>Essa é a descrição do meu projeto</li>
+                    <li><img src="resources/coment-icon.svg" alt=""><img src="resources/love-icon.svg" alt=""></li>
+                </ul>
             </div>
 
             <div class="lista-projeto lista-projeto2">
