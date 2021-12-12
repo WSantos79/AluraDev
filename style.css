@@ -1,8 +1,7 @@
 
 body {    
     background:#051D3B;
-    font-family: 'Inter', sans-serif;
-    
+    font-family: 'Inter', sans-serif;    
 }
 
 .container {
@@ -12,8 +11,7 @@ body {
 
 .headerM .container {
     display: flex;
-    justify-content:space-between;
-    
+    justify-content:space-between;    
 }
 
 .input-busca {
@@ -35,8 +33,7 @@ body {
     align-items: center;
     font-size: 16px;
     line-height: 24px;
-    color: #ffffff;
-    
+    color: #ffffff;    
 }
 
 .profile img {
@@ -50,8 +47,7 @@ body {
 .container ul a {
     color: #FFFFFF;
     font-size: 16px;    
-    text-decoration: none;  
-      
+    text-decoration: none;        
 }
 
 
@@ -85,8 +81,7 @@ main .container{
     justify-content: space-between;
 }
 
-.div-code {
-    
+.div-code {    
     width: 752px;
     height: 366px;
 
@@ -94,18 +89,13 @@ main .container{
     width: 752px;
     height: 366px;
 
-    left: 28.2%;
-     
-
+    left: 28.2%;     
     top: 15.2%;
-
 }
 .code {    
     background: #6BD1FF;    
     border-radius: 8px;  
-    padding: 32px;
-
-    
+    padding: 32px;    
 }
 
 .code_editor {
@@ -194,8 +184,7 @@ main .container{
     background: #5081FB;
     width: 302px;
     height: 56px;
-    
-    
+        
     border-radius: 8px;
     font-size: 16px;
     line-height: 24px;
