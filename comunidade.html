@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Comunidade - Alura Dev</title>
+</head>
+<body>
+    <header class="headerM">
+        <div class="container">           
+            <img src="resources/Logo.svg" alt="logo do site">                          
+
+            <form action="./">
+                <input class="input-busca" type="search" name="busca"  placeholder="Busque por algo">
+            </form>
+
+            <div class="profile">
+                <img src="resources/Photo.png" alt="foto do usuário">
+                <span>Harry</span>
+            </div>
+        </div>        
+    </header>
+
+    <main>
+            
+        <nav class="container">
+            <ul>
+                <li class="titulo-menu">Menu</li>
+                <li class="menu">
+                    <div class="rectangle37">
+                        <img class="opacity" src="resources/Font Awesome Icon-1.svg" alt="icone codigo">
+                    </div>
+
+                    <a class="menu-item opacity" href="index.html">Editor de código</a>
+                </li>
+
+
+
+                <li class="menu">
+                    <div class="rectangle37" >
+                        <img class="" src="resources/Font Awesome Icon.svg" alt="icone comunidade"> 
+                        
+                    </div>
+                    <a class="menu-item" href="comunidade.html">Comunidade</a>
+                                   
+                </li>
+            </ul>             
+        </nav> 
+        
+        <section class="exibicao-projetos">
+            <div class="lista-projeto lista-projeto1">
+                <div class="code">    
+                    <div class="code_editor lista-projeto1">                        
+                        <img class="ellipse" src="resources/mac_buttons.svg" alt="botao mac">
+                        
+                        <div class="my-code">
+                            <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => <br> accum[key], obj) <br><br> const compose = (...fns) => res => fns.reduce((accum, next) => next(accum),<br> res)<br><br> const unfold = (f, seed) => { <br>const go = (f, seed, acc) => { <br>const res = f(seed)<br> return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>} <br>return go(f, seed, [])<br> }</p>
+                            
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="lista-projeto lista-projeto2">
+
+            </div>
+            <div class="lista-projeto lista-projeto3">
+
+            </div>
+            <div class="lista-projeto lista-projeto4">
+
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
