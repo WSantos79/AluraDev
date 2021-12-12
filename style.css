@@ -1,7 +1,8 @@
 
 body {    
     background:#051D3B;
-    font-family: 'Inter', sans-serif;    
+    font-family: 'Inter', sans-serif;  
+    
 }
 
 .container {
@@ -44,12 +45,19 @@ body {
     margin: 0 0 16px;
 }
 
-.container ul a {
+.menu-item{
+    padding: 0 0 0 16px;
     color: #FFFFFF;
     font-size: 16px;    
-    text-decoration: none;        
+    text-decoration: none; 
+
+    position: absolute;    
+    margin: 1.1% 0;   
 }
 
+.comunidade{  
+    opacity: 0.56;
+}
 
 
 .titulo-menu {
@@ -69,9 +77,6 @@ body {
     text-align: center;
 }
 
-.comunidade{  
-    opacity: 0.56;
-}
 .rectangle37 img {
     margin-top: 25%;
 }
@@ -195,6 +200,7 @@ main .container{
 
 .btn:hover, .input-salvar:hover{
     border: solid #6BD1FF;    
+    cursor: pointer;
 }
 
 
