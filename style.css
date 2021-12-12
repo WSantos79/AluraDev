@@ -73,7 +73,7 @@ body {
     text-align: center;
 }
 
-.container ul li:last-child {
+.comunidade{  
     opacity: 0.56;
 }
 .rectangle37 img {
@@ -174,7 +174,9 @@ main .container{
     font-size: 16px;
     line-height: 24px;
     border: none;
-    padding: 0 14px;    
+    padding: 0 14px;   
+
+    opacity: 0.64;
 }
 
  .input-linguagem{
@@ -183,17 +185,27 @@ main .container{
  }
 #descricao-projeto {
     height: 80px;
-    margin: 16px 0 40px;    
+    margin: 16px 0 40px;   
+    
 }
 
-#input-salvar {
+.input-salvar {
     color: #051D3B;
     background: #5081FB;
-    width: 100%;
-   
+    width: 302px;
+    height: 56px;
+    
+    
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    padding: 0 14px; 
 
 }
 
-
+.btn:hover, .input-salvar:hover{
+    border: solid #6BD1FF;    
+}
 
 
