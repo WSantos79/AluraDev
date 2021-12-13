@@ -1,27 +1,27 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="comunidade.css">
-    <link rel="stylesheet" media="(max-width: 480px)" href="altura-max480.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/comunidade.css">
+    <link rel="stylesheet" media="(max-width: 480px)" href="css/altura-max480.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <title>Comunidade - Alura Dev</title>
 </head>
 <body>
     <header class="headerM">
         <div class="container">           
-            <img src="resources/Logo.svg" alt="logo do site">                          
+            <img src="img/Logo.svg" alt="logo do site">                          
 
             <form action="./">
                 <input class="input-busca" type="search" name="busca"  placeholder="Busque por algo">
             </form>
 
             <div class="profile">
-                <img src="resources/Photo.png" alt="foto do usuário">
+                <img src="img/Photo.png" alt="foto do usuário">
                 <span>Harry</span>
             </div>
         </div>        
@@ -34,21 +34,15 @@
                 <li class="titulo-menu">Menu</li>
                 <li class="menu">
                     <div class="rectangle37">
-                        <img class="opacity" src="resources/Font Awesome Icon-1.svg" alt="icone codigo">
+                        <img class="opacity" src="img/Font Awesome Icon-1.svg" alt="icone codigo">
                     </div>
-
                     <a class="menu-item opacity" href="index.html">Editor de código</a>
                 </li>
-
-
-
                 <li class="menu">
                     <div class="rectangle37" >
-                        <img class="" src="resources/Font Awesome Icon.svg" alt="icone comunidade"> 
-                        
+                        <img class="" src="img/Font Awesome Icon.svg" alt="icone comunidade">                         
                     </div>
-                    <a class="menu-item" href="comunidade.html">Comunidade</a>
-                                   
+                    <a class="menu-item" href="comunidade.html">Comunidade</a>                                   
                 </li>
             </ul>             
         </nav> 
@@ -57,8 +51,7 @@
             <div class="lista-projeto lista-projeto1">
                 <div class="code">    
                     <div class="code_editor lista-projeto1">                        
-                        <img class="ellipse" src="resources/mac_buttons.svg" alt="botao mac">
-                        
+                        <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">                        
                         <div class="my-code">
                             <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key)<br> => accum[key], obj)<br><br>
 
@@ -75,23 +68,122 @@
                     </div>                    
                 </div>
                 <ul>
-                    <li>Título do projeto</li>
-                    <li>Essa é a descrição do meu projeto</li>
-                    <li><img src="resources/coment-icon.svg" alt=""><img src="resources/love-icon.svg" alt=""></li>
+                    <li class="titulo-projeto">Título do projeto</li>
+                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
+                    <li class="ups-ordem">                        
+                        <img src="img/coment-icon.svg" alt="icone de comentario">
+                        <span class="coment-up">9</span>                                                
+                        <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
+                        <span class="love-up">9</span>                        
+                        <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                         
+                        <p class="name-user">@Harry</p>                  
+                    </li>
                 </ul>
             </div>
 
             <div class="lista-projeto lista-projeto2">
-
+                <div class="lista-projeto lista-projeto1">
+                    <div class="code">    
+                        <div class="code_editor lista-projeto1">                        
+                            <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">                            
+                            <div class="my-code">
+                                <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key)<br> => accum[key], obj)<br><br>
+    
+                                    const compose = (...fns) => res => fns.reduce((accum, next)<br> => next(accum), res)<br><br>
+                                    
+                                    const unfold = (f, seed) => {<br>
+                                      const go = (f, seed, acc) => {<br>
+                                        const res = f(seed)<br>
+                                        return res ? go(f, res[1], acc.concat([res[0]])) : acc<br>
+                                      }<br>
+                                      return go(f, seed, [])<br>
+                                    }</p>                            
+                            </div>                       
+                        </div>                    
+                    </div>
+                    <ul>
+                        <li class="titulo-projeto">Título do projeto</li>
+                        <li class="descricao-projeto">Essa é a descrição do meu projeto</li>   
+                        <li class="ups-ordem">                        
+                            <img src="img/coment-icon.svg" alt="icone de comentario">
+                            <span class="coment-up">9</span>                                                
+                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
+                            <span class="love-up">9</span>                        
+                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                         
+                            <p class="name-user">@Harry</p>                  
+                        </li>    
+                    </ul>
+                </div>
             </div>
             <div class="lista-projeto lista-projeto3">
-
+                <div class="lista-projeto lista-projeto1">
+                    <div class="code">    
+                        <div class="code_editor lista-projeto1">                        
+                            <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">                            
+                            <div class="my-code">
+                                <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key)<br> => accum[key], obj)<br><br>
+    
+                                    const compose = (...fns) => res => fns.reduce((accum, next)<br> => next(accum), res)<br><br>
+                                    
+                                    const unfold = (f, seed) => {<br>
+                                      const go = (f, seed, acc) => {<br>
+                                        const res = f(seed)<br>
+                                        return res ? go(f, res[1], acc.concat([res[0]])) : acc<br>
+                                      }<br>
+                                      return go(f, seed, [])<br>
+                                    }</p>                            
+                            </div>                       
+                        </div>                    
+                    </div>
+                    <ul>
+                        <li class="titulo-projeto">Título do projeto</li>
+                        <li class="descricao-projeto">Essa é a descrição do meu projeto</li>  
+                        <li class="ups-ordem">                        
+                            <img src="img/coment-icon.svg" alt="icone de comentario">
+                            <span class="coment-up">9</span>                                                
+                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
+                            <span class="love-up">9</span>                        
+                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                         
+                            <p class="name-user">@Harry</p>                  
+                        </li>    
+                    </ul>
+                </div>
             </div>
             <div class="lista-projeto lista-projeto4">
-
+                <div class="lista-projeto lista-projeto1">
+                    <div class="code">    
+                        <div class="code_editor lista-projeto1">                        
+                            <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">                            
+                            <div class="my-code">
+                                <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key)<br> => accum[key], obj)<br><br>
+    
+                                    const compose = (...fns) => res => fns.reduce((accum, next)<br> => next(accum), res)<br><br>
+                                    
+                                    const unfold = (f, seed) => {<br>
+                                      const go = (f, seed, acc) => {<br>
+                                        const res = f(seed)<br>
+                                        return res ? go(f, res[1], acc.concat([res[0]])) : acc<br>
+                                      }<br>
+                                      return go(f, seed, [])<br>
+                                    }</p>                            
+                            </div>                       
+                        </div>                    
+                    </div>
+                    <ul>
+                        <li class="titulo-projeto">Título do projeto</li>
+                        <li class="descricao-projeto">Essa é a descrição do meu projeto</li>   
+                        <li class="ups-ordem">                        
+                            <img src="img/coment-icon.svg" alt="icone de comentario">
+                            <span class="coment-up">9</span>                                                
+                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
+                            <span class="love-up">9</span>                        
+                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                         
+                            <p class="name-user">@Harry</p>                  
+                        </li>    
+                    </ul>
+                </div>
             </div>
         </section>
-    </main>
-    
+    </main>    
 </body>
 </html>

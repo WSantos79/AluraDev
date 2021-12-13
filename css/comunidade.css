@@ -1,0 +1,85 @@
+.exibicao-projetos{  
+    width: 90rem;
+    height: 61,5rem; /* 61,5rem  */ 
+    left: 21rem;     
+    top: 15.2%;
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0px; 
+}
+.lista-projeto {
+    width: 36.8rem;
+    height: 34rem;  /* AUMENTAR   18.8rem; */     
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.16);    
+}
+.lista-projeto2 {       
+    margin: 0 0 24px 24px;  
+}
+.lista-projeto4 {
+    margin: 0 0 32px 24px;
+}
+
+.lista-projeto1 .code {
+    background: #9AFF6B;    
+}    
+.lista-projeto2 .code {
+    background: #6B83FF;    
+}    
+.lista-projeto3 .code {
+    background: #FFC46B;    
+}    
+.lista-projeto4 .code {
+    background: #FF6BCD;  
+}    
+.my-code  {
+    font-size: 11px;
+    line-height: 15px;
+    margin: 33px 20px 12px 12px;
+}
+.titulo-projeto {
+    font-weight: 700;     
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+}
+.descricao-projeto {   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin: 0.5rem 1.5rem 0 1.5rem;
+}
+.ups-ordem {
+    display:flex;
+    margin: 2.2rem 0 0 2.1rem;     
+}
+.love-icon {
+    margin: 0 0 0 1.1rem;
+}
+.love-up {
+    margin: 0.3rem 0 0 0.6rem;
+    color: #FFFFFF;
+}
+.coment-up {
+    margin: 0.3rem 0 0 0.6rem;
+    color: #FFFFFF;
+}
+.img-user {
+    margin: 0 0 0 20rem;
+}
+.name-user{
+    margin: 0 2rem 0 0.5rem;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
