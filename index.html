@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="(max-width: 480px)" href="css/altura-max480.css">
+    <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <title>Alura Challenge Front 2021</title>
 </head>
@@ -23,43 +23,54 @@
                 <img src="img/Photo.png" alt="foto do usuário">
                 <span>Harry</span>
             </div>
-        </div>
 
-        
+            <section class="option-mobile">
+                <img class="icon-busca" src="/img/search-icon.svg" alt="icone de busca">
+                <img src="img/menu-icon.svg" alt="icone do menu">
+            </section>
+        </div>
     </header>
     <main>
+        <section class="div-code">        
+            <div class="code">    
+                <div class="code_editor">                        
+                    <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">
+                    
+                    <div class="my-code">
+                        <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => <br> accum[key], obj) <br><br> const compose = (...fns) => res => fns.reduce((accum, next) => next(accum),<br> res)<br><br> const unfold = (f, seed) => { <br>const go = (f, seed, acc) => { <br>const res = f(seed)<br> return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>} <br>return go(f, seed, [])<br> }</p>
+                    </div>
+
+                </div>                    
+            </div>
+            <input class="btn" type="button" value="Visualizar com o highlight">
             
+        </section>
+
         <nav class="container">
-            <ul>
+            <ul class="menu-principal"> 
                 <li class="titulo-menu">Menu</li>
                 <li class="menu">
                     <div class="rectangle37">
                         <img src="img/icon_code.svg" alt="icone codigo">
                     </div>
-
                     <a class="menu-item" href="index.html">Editor de código</a>
                 </li>
-
-
-
                 <li class="menu">
                     <div class="rectangle37" >
-                        <img class="opacity" src="img/icon_users.svg" alt="icone comunidade"> 
-                        
+                        <img class="opacity" src="img/icon_users.svg" alt="icone comunidade">                     
                     </div>
-                    <a class="opacity menu-item" href="comunidade.html">Comunidade</a>
-                                   
+                    <a class="opacity menu-item" href="comunidade.html">Comunidade</a>         
                 </li>
             </ul>            
 
-            <div>
+            <section class="sobre-projeto">
                 <ul>
                     <li class="titulo-menu">Seu projeto</li>
                     <form class="meu-projeto" action="./">
                         <li>                        
                             <input class="projeto" type="text" name="nome-projeto" placeholder="Nome do seu projeto">
                         </li>
-                        <li>
+                        <li>                            
                             <input class="projeto" id="descricao-projeto" type="text" name="descricao-projeto" placeholder="Descrição do seu projeto">
                         </li>
                         <li class="titulo-menu">Personalização</li>
@@ -85,25 +96,8 @@
                     </form>   
                 </ul>
 
-            </div>
-        </nav>
-
-        <div class="div-code">        
-            <div class="code">    
-                <div class="code_editor">                        
-                    <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">
-                    
-                    <div class="my-code">
-                        <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key) => <br> accum[key], obj) <br><br> const compose = (...fns) => res => fns.reduce((accum, next) => next(accum),<br> res)<br><br> const unfold = (f, seed) => { <br>const go = (f, seed, acc) => { <br>const res = f(seed)<br> return res ? go(f, res[1], acc.concat([res[0]])) : acc <br>} <br>return go(f, seed, [])<br> }</p>
-                        
-                    </div>
-                </div>                    
-            </div>
-            <input class="btn" type="button" value="Visualizar com o highlight">
-
-            
-        </div>
-        
+            </section>
+        </nav>        
     </main>
     
 </body>

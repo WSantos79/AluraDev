@@ -10,6 +10,10 @@ body {
     margin: 2% auto;
 }
 
+.option-mobile{
+    display: none;
+}
+
 .headerM .container {
     display: flex;
     justify-content:space-between;    
@@ -126,7 +130,7 @@ main .container{
     font-size: 1rem;
     line-height: 24px;
     color: #FFFFFF;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
     
 }
 
@@ -169,7 +173,7 @@ main .container{
     border: none;
     border-radius: 8px;
 }
-
+  /* ---------------------------------  ------------------------  ------------------------   */
 
 .meu-projeto .projeto, .input-linguagem {
     width: 272px;
@@ -188,15 +192,13 @@ main .container{
 }
 
  .input-linguagem{
-     width: 100%;
-     background-color: #354d6b;
+    width: 100%;
+    background-color: #354d6b;
  }
 #descricao-projeto {
     height: 80px;
-    margin: 1rem 0 40px;   
-    
+    margin: 1rem 0 2.5rem;  
 }
-
 .input-salvar {
     color: #051D3B;
     background: #5081FB;

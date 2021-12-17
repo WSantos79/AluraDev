@@ -1,0 +1,66 @@
+.container {
+    margin: 2% auto 0;
+}
+.input-busca, .profile {
+    display: none;
+}
+.menu-principal {
+    display: none;
+}
+.option-mobile {
+    display: flex;
+    margin-right: 1.8rem;
+}
+.icon-busca {
+    margin: 0 3rem;
+}
+.container {
+    width: 94%;
+    margin: 2.2rem 1rem 0rem 1rem;
+}
+
+/*  ------------------------------- COMUNIDADE -----------------------------------   */
+
+.exibicao-projetos {
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 92vw;
+}
+.lista-projeto {
+    margin-bottom: 2rem;
+    margin-left: 0;    
+    width: 92vw;
+    height: 39.75rem;
+}
+.my-code {
+    width: 100%; /* texto */
+    font-size: 14px;
+    line-height: 18px;
+}
+.code {
+   height: 63%;  /* cor fundo */
+}
+.code_editor {    
+    height: 100%;
+}
+
+.img-user {
+    margin: 0 0 0 5.6rem;
+}
+
+.lista-projeto1 .code {
+    background: #5F75E2;    
+}    
+.lista-projeto2 .code {
+    background: #FF6BCD;    
+}    
+.lista-projeto3 .code {
+    background: #FFC46B;    
+}    
+.lista-projeto4 .code {
+    background: #9AFF6B;    
+}    

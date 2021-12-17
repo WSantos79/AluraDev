@@ -1,0 +1,53 @@
+.container {
+    margin: 2% auto 0;
+}
+.input-busca, .profile {
+    display: none;
+}
+.menu-principal {
+    display: none;
+}
+.option-mobile {
+    display: flex;
+    margin-right: 1.8rem;
+}
+.icon-busca {
+    margin: 0 3rem;
+}
+.container {
+    width: 94%;
+    margin: 2.2rem 1rem 2.5rem 1rem;
+}
+.div-code {    
+    position: relative;
+    width: 92vw;
+    left: 1rem;
+    right: 1rem;    
+    top: 0.7rem;               
+}
+.code {
+    height: 30.75rem;
+}
+.code_editor {
+    height: 100%;
+}
+.my-code {
+    width: 92%;
+    height: 100%;
+    font-size: 14px;
+    line-height: 18px;
+}
+.btn { 
+    width: 92vw;
+}
+.sobre-projeto {        
+    margin: 1.2rem 0 0 0;     
+    width: 92vw; 
+}
+.meu-projeto .projeto {
+    width: 92.4%;
+}
+.input-salvar {
+    width: 100%;
+    margin: 0 0 0.5rem 0;
+}
