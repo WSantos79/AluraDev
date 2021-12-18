@@ -1,3 +1,20 @@
-.menu-principal {
+.container {
+    margin: 5% auto 0;
+}
+.menu-principal, .profile, .icon-busca{
     display: none;
 }
+.option-mobile {
+    display: flex;
+}
+.input-busca {
+    width: 30rem;
+}
+.div-code {
+    left: 2rem;
+    width: 92vw;
+}
+.btn { 
+    width: 92vw;
+}
+

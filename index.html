@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css">
-    <link rel="stylesheet" media="(max-width: 960px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(max-width: 960px) and (min-width: 481px)" href="css/tablet.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <title>Alura Challenge Front 2021</title>
 </head>
@@ -50,7 +50,7 @@
         <nav class="container">
             <ul class="menu-principal"> 
                 <li class="titulo-menu">Menu</li>
-                <li class="menu">
+                <li class="menu no-opacity">
                     <div class="rectangle37">
                         <img src="img/icon_code.svg" alt="icone codigo">
                     </div>
@@ -58,9 +58,9 @@
                 </li>
                 <li class="menu">
                     <div class="rectangle37" >
-                        <img class="opacity" src="img/icon_users.svg" alt="icone comunidade">                     
+                        <img src="img/icon_users.svg" alt="icone comunidade">                     
                     </div>
-                    <a class="opacity menu-item" href="comunidade.html">Comunidade</a>         
+                    <a class="menu-item" href="comunidade.html">Comunidade</a>         
                 </li>
             </ul>            
 
@@ -86,7 +86,7 @@
                         </li>
                         <li>  
                             <div class="rectangle29">                             
-                                <input class="rectangle-color" type="color" name="rectangle30" value="#6BD1FF">
+                                <input class="rectangle-color" type="color" name="rectangle30" value="#6BD1FF"  oninput="setColor()">
                             </div>
                            
                         </li>
@@ -101,5 +101,6 @@
         </nav>        
     </main>
     
+    <script src="css/index.js"></script>
 </body>
 </html>

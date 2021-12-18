@@ -28,20 +28,23 @@ body {
     font-size: 1rem; /* 1rem = 16px */
     line-height: 24px;  
     color: #ffffff;
-    opacity: 0.64;
     border: none;    
+    opacity: 0.64;
 }
-
-
 .profile {
     display: flex;
     align-items: center;
     font-size: 1rem;
     line-height: 24px;
     color: #ffffff;
-    margin: 0 0 0 6.5em;    
+    margin: 0 0 0 6.5em;   
+    padding: 0.7rem 1rem 0.7rem 0.7rem; 
+    border-radius: 8px;
 }
+.profile:hover {
+    background: #FFFFFF14;
 
+}
 .profile img {
     margin: 0 8px;
 }
@@ -49,7 +52,15 @@ body {
 .menu {
     margin: 0 0 1rem;
 }
-
+.menu{
+    opacity: 56%; 
+}
+.menu:hover {
+    opacity: 72%;
+}
+.no-opacity {
+    opacity: 100%;
+}
 .menu-item{
     padding: 0 0 0 1rem;
     color: #FFFFFF;
@@ -59,7 +70,6 @@ body {
     position: absolute;    
     margin: 1.1% 0;   
 }
-
 .titulo-menu {
     color: #FFFFFF;
     font-size: 12px;    
@@ -67,7 +77,6 @@ body {
     text-transform: uppercase;    
     margin: 0 0 1rem;
 }
-
 .rectangle37 {
     background: #5081FB;
     height: 48px;
@@ -76,10 +85,10 @@ body {
     border-radius: 1rem;
     text-align: center;
 }
-
 .rectangle37 img {
     margin-top: 25%;
 }
+
 
 main .container{
     display: flex;
@@ -186,9 +195,7 @@ main .container{
     font-size: 1rem;
     line-height: 24px;
     border: none;
-    padding: 0 14px;   
-
-    opacity: 0.64;
+    padding: 0 14px;    
 }
 
  .input-linguagem{
@@ -217,8 +224,3 @@ main .container{
     border: solid #6BD1FF;    
     cursor: pointer;
 }
-
-.opacity{     
-    opacity: 0.56;   
-}
-

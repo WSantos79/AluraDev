@@ -1,12 +1,10 @@
 .container {
     margin: 2% auto 0;
 }
-.input-busca, .profile {
+.input-busca, .profile, .menu-principal {
     display: none;
 }
-.menu-principal {
-    display: none;
-}
+
 .option-mobile {
     display: flex;
     margin-right: 1.8rem;
