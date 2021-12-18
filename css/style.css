@@ -55,12 +55,17 @@ body {
 .menu{
     opacity: 56%; 
 }
-.menu:hover {
+.menu:hover{ 
     opacity: 72%;
+    background: rgba(80, 129, 251, 0.64);
+    border-radius: 1rem;
+    height: 48px;
+    width: 48px
 }
 .no-opacity {
-    opacity: 100%;
+    opacity: 100%;   
 }
+
 .menu-item{
     padding: 0 0 0 1rem;
     color: #FFFFFF;
@@ -78,12 +83,15 @@ body {
     margin: 0 0 1rem;
 }
 .rectangle37 {
-    background: #5081FB;
+    background: rgba(80, 129, 251, 0.16);
     height: 48px;
     width: 48px;    
     display: inline-block;
     border-radius: 1rem;
     text-align: center;
+}
+.rectangle37_focus {
+    background: rgba(80, 129, 251, 1);
 }
 .rectangle37 img {
     margin-top: 25%;
