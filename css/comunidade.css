@@ -16,14 +16,8 @@
     height: 34rem;  /* AUMENTAR   18.8rem; */     
     border-radius: 8px;
     background: rgba(0, 0, 0, 0.16);    
+    margin: 0 24px 24px 0px;  
 }
-.lista-projeto2 {       
-    margin: 0 0 24px 24px;  
-}
-.lista-projeto4 {
-    margin: 0 0 32px 24px;
-}
-
 .lista-projeto1 .code {
     background: #9AFF6B;    
 }    

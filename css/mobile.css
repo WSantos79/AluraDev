@@ -30,10 +30,12 @@
     height: 100%;
 }
 .my-code {
-    width: 92%;
+  /*  width: 92%;
     height: 100%;
-    font-size: 14px;
+    */font-size: 14px;
     line-height: 18px;
+    width: 88%;
+    height: 85%;
 }
 .btn { 
     width: 92vw;
