@@ -38,8 +38,9 @@
 }    
 .my-code  {
     font-size: 11px;
-    line-height: 15px;
-    margin: 33px 20px 12px 12px;
+    line-height: 15px;    
+    color: #FFFFFF;  /* retirar depois ? */
+    font-family: 'Roboto Mono', monospace;  /* retirar depois ? */
 }
 .titulo-projeto {
     font-weight: 700;     
