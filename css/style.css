@@ -42,6 +42,7 @@ body {
 }
 .profile:hover {
   background: #ffffff14;
+  cursor: pointer;
 }
 .profile img {
   margin: 0 8px;
