@@ -1,3 +1,15 @@
+/*  --------------------------------------------------  */
+
+ /*const border = document.querySelector('.code');
+const input = document.querySelector('.rectangle-color');
+
+input.addEventListener('input', setColor)
+
+function setColor() {
+  border.style.background = input.value
+}*/
+
+
 /*  -------------------- TAB dentro do text area ------------------------------  */
 document.getElementById('codigo').addEventListener('keydown', function (e) {
   if (e.keyCode === 9) { // TAB
@@ -15,14 +27,19 @@ document.getElementById('codigo').addEventListener('keydown', function (e) {
     e.preventDefault();
   }
 }, false);
+/*  --------------------Eu tentando salvar projeto ------------------------------  */
 
-/*  --------------------------------------------------  */
+const salvarProjeto = (eventoSalvar) => {
+  eventoSalvar.preventDefault();
 
-const border = document.getElementsByClassName('code');
-const input = document.getElementsByClassName('rectangle-color');
+  const textArea = document.getElementById('codigo').value;
+  const nome = document.querySelector('[data-nomeProjeto]').value;
+  const descricao = document.getElementById('descricao-projeto').value;
+  const linguagem = document.querySelector('.input-linguagem').value;
+  const cor = document.querySelector('.rectangle-color').value;
 
-input.addEventListener('input', setColor)
-
-function setColor() {
-  border.style.background = input.value
 }
+
+const btnSalvar = document.querySelector('.input-salvar');
+
+btnSalvar.addEventListener('click', salvarProjeto);
