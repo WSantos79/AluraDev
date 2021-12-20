@@ -1,15 +1,3 @@
-/*  --------------------------------------------------  */
-
- /*const border = document.querySelector('.code');
-const input = document.querySelector('.rectangle-color');
-
-input.addEventListener('input', setColor)
-
-function setColor() {
-  border.style.background = input.value
-}*/
-
-
 /*  -------------------- TAB dentro do text area ------------------------------  */
 document.getElementById('codigo').addEventListener('keydown', function (e) {
   if (e.keyCode === 9) { // TAB
@@ -27,6 +15,20 @@ document.getElementById('codigo').addEventListener('keydown', function (e) {
     e.preventDefault();
   }
 }, false);
+
+/*  -------------------- mudar a cor do code de projeto ------------------------------  */
+const mudarCor = () => {
+
+  const valueCor = document.querySelector('.rectangle-color').value;
+  const codeCor = document.querySelector('.code');
+    
+  codeCor.style.background = `${valueCor}`;
+  }
+
+  const btnCor = document.querySelector('.rectangle-color');
+  
+  btnCor.addEventListener('input', mudarCor);
+ 
 /*  --------------------Eu tentando salvar projeto ------------------------------  */
 
 const salvarProjeto = (eventoSalvar) => {
@@ -43,3 +45,6 @@ const salvarProjeto = (eventoSalvar) => {
 const btnSalvar = document.querySelector('.input-salvar');
 
 btnSalvar.addEventListener('click', salvarProjeto);
+
+
+  

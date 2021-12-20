@@ -1,16 +1,26 @@
-document.getElementById('codigo').addEventListener('keydown', function(e) {
-    if(e.keyCode === 9) { // TAB
-        var posAnterior = this.selectionStart;
-        var posPosterior = this.selectionEnd;
+const criarTarefa = (evento) => {
+    evento.preventDefault();
 
-        e.target.value = e.target.value.substring(0, posAnterior)
-                         + '\t'
-                         + e.target.value.substring(posPosterior);
+    const input = document.querySelector(".form-input");
+    const inputValue = input.value;
+    
+    const lista = document.querySelector ('[data-list]');
+    
 
-        this.selectionStart = posAnterior + 1;
-        this.selectionEnd = posAnterior + 1;
- 
-        // não move pro próximo elemento
-        e.preventDefault();
-    }
-}, false);
+    const tarefa = document.createElement('li');
+    tarefa.classList.add('task');
+    const conteudo = `<p class="content">${inputValue}</p>`;
+
+    tarefa.innerHTML = conteudo;
+
+    lista.appendChild(tarefa);
+
+    input.value = " "
+}
+
+const novaTarefa = document.querySelector(".form-button");
+
+
+novaTarefa.addEventListener('click', criarTarefa);
+
+
