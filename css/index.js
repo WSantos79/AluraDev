@@ -62,14 +62,14 @@ const abriMenu = (evento) => {
   menu.style.display = `block`;
   barraMenu.style.display = `block`;
   usuario.style.display = `block`;
-  imgMenu.setAttribute('src', '/img/close-icon.svg');
+  imgMenu.setAttribute('src', 'img/close-icon.svg');
   i = 1;
 
   }else{
     menu.style.display = `none`;
     barraMenu.style.display = `none`;
     usuario.style.display = `none`;
-    imgMenu.setAttribute('src', '/img/menu-icon.svg');
+    imgMenu.setAttribute('src', 'img/menu-icon.svg');
     i = 0;
   }
 }

@@ -12,14 +12,14 @@ const abriMenu = (evento) => {
   menu.style.display = `block`;
   barraMenu.style.display = `block`;
   usuario.style.display = `block`;
-  imgMenu.setAttribute('src', '/img/close-icon.svg');
+  imgMenu.setAttribute('src', 'img/close-icon.svg');
   i = 1;
 
   }else{
     menu.style.display = `none`;
     barraMenu.style.display = `none`;
     usuario.style.display = `none`;
-    imgMenu.setAttribute('src', '/img/menu-icon.svg');
+    imgMenu.setAttribute('src', 'img/menu-icon.svg');
     i = 0;
   }
 }
@@ -37,12 +37,12 @@ for (let i=0; i <= btnLoveUp.length; i++){
         
         if (testeIF == 1){
             up[i].innerHTML = parseInt(up[i].innerHTML) - 1;
-            img[i].setAttribute('src', '/img/love-icon.svg');
+            img[i].setAttribute('src', 'img/love-icon.svg');
             testeIF = 0;
         
         }else {
             up[i].innerHTML = parseInt(up[i].innerHTML) + 1;
-            img[i].setAttribute('src', '/img/love-icon-red.svg');
+            img[i].setAttribute('src', 'img/love-icon-red.svg');
             testeIF = 1;
         }
     })
