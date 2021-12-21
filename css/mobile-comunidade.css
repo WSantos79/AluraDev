@@ -1,24 +1,3 @@
-.container {
-    margin: 2% auto 0;
-}
-.input-busca, .profile {
-    display: none;
-}
-.menu-principal {
-    display: none;
-}
-.option-mobile {
-    display: flex;
-    margin-right: 1.8rem;
-}
-.icon-busca {
-    margin: 0 3rem;
-}
-.container {
-    width: 94%;
-    margin: 2.2rem 1rem 0rem 1rem;
-}
-
 /*  ------------------------------- COMUNIDADE -----------------------------------   */
 
 .exibicao-projetos {
@@ -47,11 +26,9 @@
 .code_editor {    
     height: 100%;
 }
-
-.img-user {
-    margin: 0 0 0 5.6rem;
-}
-
+.cod-profile {
+    margin-left: 60%;
+  }
 .lista-projeto1 .code {
     background: #5F75E2;    
 }    

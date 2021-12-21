@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/reset.css">
 
-        <link rel="stylesheet" href="css/style.css">>
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css">
         <link rel="stylesheet" media="(min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
 
@@ -30,7 +30,9 @@
 
             <section class="option-mobile">
                 <img class="icon-busca" src="img/search-icon.svg" alt="icone de busca">
-                <img src="img/menu-icon.svg" alt="icone do menu">
+                <div class="icon-menu">
+                    <img data-img-menu src="img/menu-icon.svg" alt="icone do menu">
+                </div>
             </section>
         </div>
     </header>
@@ -47,9 +49,10 @@
                 </div>                    
             </div>
             <input class="btn" type="button" value="Visualizar com o highlight">
-            
         </section>
-
+        <section class="menu-smart">
+            <div class="linha"></div>
+        </section>
         <nav class="container">
             <ul class="menu-principal"> 
                 <li class="titulo-menu">Menu</li>

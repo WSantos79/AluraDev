@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/comunidade.css">
+    <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css">
     <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile-comunidade.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <title>Comunidade - Alura Dev</title>
@@ -27,7 +28,9 @@
 
             <section class="option-mobile">
                 <img class="icon-busca" src="/img/search-icon.svg" alt="icone de busca">
-                <img src="img/menu-icon.svg" alt="icone do menu">
+                <div class="icon-menu">
+                    <img data-img-menu src="img/menu-icon.svg" alt="icone do menu">
+                </div>
             </section>
         </div>
     </header>
@@ -51,7 +54,9 @@
                 </li>
             </ul>             
         </nav> 
-        
+        <section class="menu-smart">
+            <div class="linha"></div>
+        </section>
         <section class="exibicao-projetos">
             <div class="lista-projeto lista-projeto1">
                 <div class="code">    
@@ -75,13 +80,21 @@
                 <ul>
                     <li class="titulo-projeto">Título do projeto</li>
                     <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
-                    <li class="ups-ordem">                        
-                        <img src="img/coment-icon.svg" alt="icone de comentario">
-                        <span class="coment-up">9</span>                                                
-                        <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                        <span class="love-up">9</span>                        
-                        <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                         
-                        <p class="name-user">@Harry</p>                  
+                    <li class="ups-ordem">   
+                        <div class="coment-up-efeito">                   
+                            <img src="img/coment-icon.svg" alt="icone de comentario">
+                            <span class="coment-up">9</span>
+                        </div>                        
+
+                        <div class="love-up-efeito">
+                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
+                            <span class="love-up">9</span>  
+                        </div>
+                            
+                        <div class="cod-profile">
+                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
+                            <p class="name-user">@Harry</p> 
+                        </div>                 
                     </li>
                 </ul>
             </div>
@@ -108,17 +121,24 @@
                 </div>
                 <ul>
                     <li class="titulo-projeto">Título do projeto</li>
-                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>   
-                    <li class="ups-ordem">                        
-                        <img src="img/coment-icon.svg" alt="icone de comentario">
-                        <span class="coment-up">9</span>                                                
-                        <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                        <span class="love-up">9</span>                        
-                        <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                         
-                        <p class="name-user">@Harry</p>                  
-                    </li>    
-                </ul>
-                    
+                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
+                    <li class="ups-ordem">   
+                        <div class="coment-up-efeito">                   
+                            <img src="img/coment-icon.svg" alt="icone de comentario">
+                            <span class="coment-up">9</span>
+                        </div>
+
+                        <div class="love-up-efeito">
+                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
+                            <span class="love-up">9</span>  
+                        </div>
+                        
+                        <div class="cod-profile">
+                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
+                            <p class="name-user">@Harry</p> 
+                        </div>            
+                    </li>
+                </ul>                    
             </div>
             <div class="lista-projeto lista-projeto3">
                 
@@ -142,17 +162,24 @@
                 </div>
                 <ul>
                     <li class="titulo-projeto">Título do projeto</li>
-                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>  
-                    <li class="ups-ordem">                        
-                        <img src="img/coment-icon.svg" alt="icone de comentario">
-                        <span class="coment-up">9</span>                                                
-                        <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                        <span class="love-up">9</span>                        
-                        <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                         
-                        <p class="name-user">@Harry</p>                  
-                    </li>    
-                </ul>
-                
+                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
+                    <li class="ups-ordem">   
+                        <div class="coment-up-efeito">                   
+                            <img src="img/coment-icon.svg" alt="icone de comentario">
+                            <span class="coment-up">9</span>
+                        </div>
+
+                        <div class="love-up-efeito">
+                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
+                            <span class="love-up">9</span>  
+                        </div>
+                        
+                        <div class="cod-profile">
+                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
+                            <p class="name-user">@Harry</p> 
+                        </div>                  
+                    </li>
+                </ul>                
             </div>
             <div class="lista-projeto lista-projeto4">
                 
@@ -176,17 +203,24 @@
                 </div>
                 <ul>
                     <li class="titulo-projeto">Título do projeto</li>
-                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>   
-                    <li class="ups-ordem">                        
-                        <img src="img/coment-icon.svg" alt="icone de comentario">
-                        <span class="coment-up">9</span>                                                
-                        <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                        <span class="love-up">9</span>                        
-                        <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                         
-                        <p class="name-user">@Harry</p>                  
-                    </li>    
-                </ul>
-               
+                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
+                    <li class="ups-ordem">   
+                        <div class="coment-up-efeito">                   
+                            <img src="img/coment-icon.svg" alt="icone de comentario">
+                            <span class="coment-up">9</span>
+                        </div>
+
+                        <div class="love-up-efeito">
+                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
+                            <span class="love-up">9</span>  
+                        </div>
+                        
+                        <div class="cod-profile">
+                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
+                            <p class="name-user">@Harry</p> 
+                        </div>               
+                    </li>
+                </ul>               
             </div>
 
             <!-- ====================================================================================================  -->
@@ -212,20 +246,25 @@
                 </div>
                 <ul>
                     <li class="titulo-projeto">Título do projeto</li>
-                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>   
-                    <li class="ups-ordem">                        
-                        <img src="img/coment-icon.svg" alt="icone de comentario">
-                        <span class="coment-up">9</span>                                                
-                        <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                        <span class="love-up">9</span>                        
-                        <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                         
-                        <p class="name-user">@Harry</p>                  
-                    </li>    
-                </ul>
-               
+                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
+                    <li class="ups-ordem">   
+                        <div class="coment-up-efeito">                   
+                            <img src="img/coment-icon.svg" alt="icone de comentario">
+                            <span class="coment-up">9</span>
+                        </div>
+
+                        <div class="love-up-efeito">
+                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
+                            <span class="love-up">9</span>  
+                        </div>
+                        
+                        <div class="cod-profile">
+                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
+                            <p class="name-user">@Harry</p> 
+                        </div>              
+                    </li>
+                </ul>               
             </div>
-
-
             <div class="lista-projeto">
                 
                 <div class="code" style="background-color: #000000;">    
@@ -248,19 +287,27 @@
                 </div>
                 <ul>
                     <li class="titulo-projeto">Título do projeto</li>
-                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>   
-                    <li class="ups-ordem">                        
-                        <img src="img/coment-icon.svg" alt="icone de comentario">
-                        <span class="coment-up">9</span>                                                
-                        <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                        <span class="love-up">9</span>                        
-                        <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                         
-                        <p class="name-user">@Harry</p>                  
-                    </li>    
-                </ul>
-               
+                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
+                    <li class="ups-ordem">   
+                        <div class="coment-up-efeito">                   
+                            <img src="img/coment-icon.svg" alt="icone de comentario">
+                            <span class="coment-up">9</span>
+                        </div>
+
+                        <div class="love-up-efeito">
+                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
+                            <span class="love-up">9</span>  
+                        </div>
+                        
+                        <div class="cod-profile">
+                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
+                            <p class="name-user">@Harry</p> 
+                        </div>                
+                    </li>
+                </ul>               
             </div>
         </section>
-    </main>    
+    </main>
+    <script src="/css/comunidade.js"></script>
 </body>
 </html>

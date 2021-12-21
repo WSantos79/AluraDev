@@ -55,25 +55,44 @@
     margin: 0.5rem 1.5rem 0 1.5rem;
 }
 .ups-ordem {
-    display:flex;
-    margin: 2.2rem 0 0 2.1rem;     
+    margin: 2.2rem 0 0 2.1rem;
 }
-.love-icon {
+.coment-up-efeito,
+.love-up-efeito {
+    display:flex;
+    padding: 8px; 
+}
+.ups-ordem {
+    display: flex;
+}
+.love-up-efeito {
     margin: 0 0 0 1.1rem;
 }
 .love-up {
-    margin: 0.3rem 0 0 0.6rem;
+    margin: 0 0 0 0.6rem;
     color: #FFFFFF;
 }
 .coment-up {
-    margin: 0.3rem 0 0 0.6rem;
+    margin: 0 0 0 0.6rem;
     color: #FFFFFF;
 }
-.img-user {
-    margin: 0 0 0 20rem;
+.coment-up-efeito:hover,
+.love-up-efeito:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    cursor: pointer;
+}
+.coment-up-efeito:active,
+.love-up-efeito:active {
+    background: rgba(255, 255, 255, 0.16)
+}
+.cod-profile {
+  display: flex;
+  position: absolute;
+  margin-left: 30%;
 }
 .name-user{
-    margin: 0 2rem 0 0.5rem;
+    margin: 0.3rem 0 0 0.52rem;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;

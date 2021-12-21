@@ -1,16 +1,30 @@
 .container {
     margin: 2% auto 0;
 }
-.input-busca, .profile, .menu-principal {
+.input-busca,
+.profile,
+.menu-principal,
+.titulo-menu,               
+.menu-smart {
     display: none;
 }
-
 .option-mobile {
     display: flex;
     margin-right: 1.8rem;
 }
+.icon-menu {
+    padding: 10px;
+}
+.icon-menu:hover,
+.icon-busca:hover {
+    padding: 10px;
+    background: rgba(80, 129, 251, 0.08);
+    border-radius: 16px;
+    cursor: pointer;
+}
 .icon-busca {
     margin: 0 3rem;
+    padding: 10px;
 }
 .container {
     width: 94%;
@@ -50,4 +64,25 @@
 .input-salvar {
     width: 100%;
     margin: 0 0 0.5rem 0;
+} 
+.menu-principal {
+    position: absolute;
+    right: 12rem;
+    top: 10rem; 
+    white-space: nowrap;
+    z-index: 2;
+}
+.menu-item {
+    margin: 28% 0;
+}
+.profile {
+    z-index: 2;
+    position: absolute;
+    top: 21rem;
+    right: 11rem;
+    
+}
+.profile span {
+    position: absolute;
+    margin-top: 5px;
 }
