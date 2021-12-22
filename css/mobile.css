@@ -8,9 +8,13 @@
 .menu-smart {
     display: none;
 }
+.input-busca{
+    width:  79vw;
+    margin-right: 0.5rem;
+}
 .option-mobile {
     display: flex;
-    margin-right: 1.8rem;
+    margin-right: 1rem;
 }
 .icon-menu {
     padding: 10px;
@@ -23,7 +27,7 @@
     cursor: pointer;
 }
 .icon-busca {
-    margin: 0 3rem;
+    margin: 0 1rem;
     padding: 10px;
 }
 .container {
