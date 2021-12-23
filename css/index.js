@@ -30,7 +30,6 @@ iconBusca.addEventListener('click', barraPesquisa);
 
 /*  --------------------barra de menu smart mobile------------------------------  */
 let i = 0;
-
 const abriMenu = (evento) => {
   evento.preventDefault();
 
@@ -57,7 +56,7 @@ const abriMenu = (evento) => {
 
 menu.addEventListener('click', abriMenu);
 
-/*  -------------------- TAB dentro do text area ------------------------------  */
+/*  -------------------- TAB dentro do text area ------------------------------ 
 document.getElementById('codigo').addEventListener('keydown', function (e) {
   if (e.keyCode === 9) { // TAB
     var posAnterior = this.selectionStart;
@@ -74,7 +73,7 @@ document.getElementById('codigo').addEventListener('keydown', function (e) {
     e.preventDefault();
   }
 }, false);
-
+ */
 /*  -------------------- mudar a cor do code de projeto ------------------------------  */
 const mudarCor = () => {
 
@@ -88,6 +87,28 @@ const mudarCor = () => {
   
   btnCor.addEventListener('input', mudarCor);
  
+/*  --------------------Eu tentando highlight ------------------------------  */
+const btnLinguagem = document.querySelector('.input-linguagem');
+
+const aplicaHighlight = () => {
+
+  const linguagem = btnLinguagem.options[btnLinguagem.selectedIndex].text;  
+  const areaCodigo = document.querySelector('.my-code');
+
+  const code = document.querySelector('.hljs');
+  const codigo = areaCodigo.innerText;
+
+  code.classList = `hljs ${linguagem}`;
+
+  areaCodigo.querySelector('code').textContent = codigo;
+
+  hljs.highlightElement(areaCodigo.querySelector('code'));
+}
+
+btnLinguagem.addEventListener('change', aplicaHighlight);
+
+
+
 /*  --------------------Eu tentando salvar projeto ------------------------------  */
 
 const salvarProjeto = (eventoSalvar) => {

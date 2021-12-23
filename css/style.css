@@ -132,6 +132,7 @@ main .container {
   margin: 1.5rem 1rem 1rem 1rem;
 }
 #codigo { 
+  display: inline-block;
   width: 100%;
   height: 100%;
   margin: 0 0 0 0;
@@ -139,11 +140,12 @@ main .container {
   border: none;
   outline: none;
   overflow: auto;
-  background-color: rgba(20, 20, 20, 1);
+  background: rgba(20, 20, 20, 1);
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   font-family: "Roboto Mono", monospace;
+  white-space: pre-wrap;
 }
 .btn {
   width: 54rem;

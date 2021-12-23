@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/hardcore.css">
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css">
@@ -43,7 +44,9 @@
                     <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">
                     
                     <div class="my-code">
-                        <textarea id="codigo" name="codigo"></textarea>
+                        <code class="hljs" id="codigo" contenteditable="true"></code>
+                       <!-- quando cola texto muda a cor..... e tentar add tecla table... e tirar a barra para os lados
+                                para parar de expandir para os lados  -->
                     </div>
 
                 </div>                    
@@ -87,6 +90,8 @@
                                     <option value="">JavaScript</option>
                                     <option value="">Java</option>
                                     <option value="">Python</option>
+                                    <option value="">HTML</option>
+                                    <option value="">CSS</option>
                                 </select>
                             </fieldset>
                         </li>
@@ -106,7 +111,8 @@
             </section>
         </nav>        
     </main>
-    
+
     <script src="css/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 </body>
 </html>
