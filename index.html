@@ -44,9 +44,15 @@
                     <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">
                     
                     <div class="my-code">
-                        <code class="hljs" id="codigo" contenteditable="true"></code>
-                       <!-- quando cola texto muda a cor..... e tentar add tecla table... e tirar a barra para os lados
-                                para parar de expandir para os lados  -->
+                        <code class="hljs JavaScript language-JavaScript" id="codigo" contenteditable="true" autocapitalize="none" aria-autocomplete="none" spellcheck="false" role="presentation">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                            <br>const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                            <br>const unfold = (f, seed) => {
+   const go = (f, seed, acc) => {
+      const res = f(seed)
+      return res ? go(f, res[1], acc.concat([res[0]])) : acc
+   }
+   return go(f, seed, [])
+}</code>    
                     </div>
 
                 </div>                    
@@ -83,7 +89,9 @@
                         <li>                            
                             <input class="projeto" id="descricao-projeto" type="text" name="descricao-projeto" placeholder="Descrição do seu projeto">
                         </li>
-                        <li class="titulo-menu">Personalização</li>
+                    </form>
+                    <li class="titulo-menu">Personalização</li>
+                    <form class="meu-projeto" action="./">
                         <li>
                             <fieldset class="linguagem">
                                 <select class="input-linguagem" name="selecao-linguagem">

@@ -2,7 +2,7 @@
 
 .exibicao-projetos {
     position: relative;
-    left: 1rem;
+    left: 2rem;
     right: 1rem;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
     margin-bottom: 2rem;
     margin-left: 0;    
     width: 92vw;
-    height: 39.75rem;
+    height: 35rem;
 }
 .my-code {
     width: 100%; /* texto */
@@ -20,14 +20,14 @@
     line-height: 18px;
 }
 .code {
-   height: 63%;  /* cor fundo */
+   height: 55%;  /* cor fundo */
 }
 .code_editor {    
     height: 100%;
 }
 .cod-profile {
-    margin-left: 60%;
-  }
+    margin-left: 76%;
+}
 .lista-projeto1 .code {
     background: #5F75E2;    
 }    

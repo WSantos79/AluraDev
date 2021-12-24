@@ -3,6 +3,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
+
 .container {
   width: 94%;
   margin: 2% auto;
@@ -138,8 +139,11 @@ main .container {
   margin: 0 0 0 0;
   resize: none;
   border: none;
+  
   outline: none;
-  overflow: auto;
+  overflow-x: hidden;
+  word-break: break-word;
+  
   background: rgba(20, 20, 20, 1);
   color: #ffffff;
   font-size: 14px;

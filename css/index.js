@@ -56,9 +56,10 @@ const abriMenu = (evento) => {
 
 menu.addEventListener('click', abriMenu);
 
-/*  -------------------- TAB dentro do text area ------------------------------ 
+/*  -------------------- TAB dentro do text area ------------------------------  
 document.getElementById('codigo').addEventListener('keydown', function (e) {
   if (e.keyCode === 9) { // TAB
+    
     var posAnterior = this.selectionStart;
     var posPosterior = this.selectionEnd;
 
@@ -72,8 +73,9 @@ document.getElementById('codigo').addEventListener('keydown', function (e) {
     // não move pro próximo elemento
     e.preventDefault();
   }
-}, false);
- */
+}, false);*/
+
+
 /*  -------------------- mudar a cor do code de projeto ------------------------------  */
 const mudarCor = () => {
 
@@ -87,26 +89,29 @@ const mudarCor = () => {
   
   btnCor.addEventListener('input', mudarCor);
  
-/*  --------------------Eu tentando highlight ------------------------------  */
-const btnLinguagem = document.querySelector('.input-linguagem');
+/*  --------------------Efeito  High Light ------------------------------  */
+
+
 
 const aplicaHighlight = () => {
-
+  const btnLinguagem = document.querySelector('.input-linguagem');
   const linguagem = btnLinguagem.options[btnLinguagem.selectedIndex].text;  
+  const code = document.getElementById('codigo');
   const areaCodigo = document.querySelector('.my-code');
 
-  const code = document.querySelector('.hljs');
   const codigo = areaCodigo.innerText;
-
+  
   code.classList = `hljs ${linguagem}`;
 
   areaCodigo.querySelector('code').textContent = codigo;
+  
 
   hljs.highlightElement(areaCodigo.querySelector('code'));
+  
 }
+const btbHighLight = document.querySelector('.btn');
 
-btnLinguagem.addEventListener('change', aplicaHighlight);
-
+btbHighLight.addEventListener('click', aplicaHighlight);
 
 
 /*  --------------------Eu tentando salvar projeto ------------------------------  */
@@ -125,6 +130,3 @@ const salvarProjeto = (eventoSalvar) => {
 const btnSalvar = document.querySelector('.input-salvar');
 
 btnSalvar.addEventListener('click', salvarProjeto);
-
-
-

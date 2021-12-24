@@ -1,5 +1,6 @@
 .container {
-    margin: 2% auto 0;
+    width: 94%;
+    margin: 2.2rem 1rem 0 1rem;
 }
 .input-busca,
 .profile,
@@ -7,6 +8,9 @@
 .titulo-menu,               
 .menu-smart {
     display: none;
+}
+.sobre-projeto .titulo-menu {
+    display: block;    
 }
 .input-busca{
     width:  79vw;
@@ -30,16 +34,12 @@
     margin: 0 1rem;
     padding: 10px;
 }
-.container {
-    width: 94%;
-    margin: 2.2rem 1rem 2.5rem 1rem;
-}
 .div-code {    
     position: relative;
     width: 92vw;
     left: 1rem;
     right: 1rem;    
-    top: 0.7rem;               
+    top: 3rem;               
 }
 .code {
     height: 30.75rem;
@@ -60,7 +60,9 @@
 }
 .sobre-projeto {        
     margin: 1.2rem 0 0 0;     
-    width: 92vw; 
+    width: 92vw;
+    position: relative;
+    top: 2rem;
 }
 .meu-projeto .projeto {
     width: 92.4%;
@@ -84,7 +86,6 @@
     position: absolute;
     top: 21rem;
     right: 11rem;
-    
 }
 .profile span {
     position: absolute;

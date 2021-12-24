@@ -1,8 +1,15 @@
 .container {
-    margin: 5% auto 0;
+    margin: 5% 0 0 2rem;
+    width: 90%;
 }
-.menu-principal, .profile, .icon-busca{
+.menu-principal,
+.profile,
+.icon-busca,
+.titulo-menu{
     display: none;
+}
+.sobre-projeto .titulo-menu {
+    display: block;
 }
 .option-mobile {
     display: flex;
@@ -10,11 +17,71 @@
 .input-busca {
     width: 30rem;
 }
-.div-code {
-    left: 2rem;
+.div-code {     
+    position: relative;
     width: 92vw;
+    left: 2rem;
+    right: 1rem;    
+    top: 3rem; 
 }
 .btn { 
     width: 92vw;
 }
-
+.icon-menu {
+    margin-top: 1.2rem;
+}
+.sobre-projeto {
+   position: relative;
+   top: 3rem;
+}
+.meu-projeto {
+    display: flex;
+    flex-wrap: wrap;
+}    
+.meu-projeto .titulo-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projeto { 
+    width: 88.5vw;
+}
+.rectangle29 {
+    position: relative;
+    margin-left: 1rem;
+    margin-top: 0;
+}
+.rectangle29,
+.linguagem {
+    width: 45vw;
+}
+.input-salvar{
+    width: 92vw;
+}
+.menu-smart { 
+    width: 34vw;
+    height: 35rem; 
+    top: 7.6rem;    
+}
+.menu-principal {
+    position: absolute;
+    right: 13rem;
+    top: 9rem;  
+    white-space: nowrap;
+    z-index: 2;
+}
+.menu-item {
+    margin: 28% 0;
+}
+.profile {
+    z-index: 2;
+    position: absolute;
+    top: 21rem;
+    right: 12rem;
+}
+.profile span {
+    position: absolute;
+    margin-top: 5px;
+}
+.linha {
+    width: 27vw;
+}
