@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/hardcore.css">       
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/comunidade.css">
@@ -12,8 +13,8 @@
     <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css">
     <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile-comunidade.css">
 
-    <link rel="stylesheet" media="(min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
-    <link rel="stylesheet" media="(min-width: 481px) and (max-width: 960px)" href="css/tablet-comunidade.css">
+    <link rel="stylesheet" media="(min-width: 481px) and (max-width: 1024px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(min-width: 481px) and (max-width: 1024px)" href="css/tablet-comunidade.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <title>Comunidade - Alura Dev</title>
@@ -64,258 +65,12 @@
             <div class="linha"></div>
         </section>
         <section class="exibicao-projetos">
-            <div class="lista-projeto lista-projeto1">
-                <div class="code">    
-                    <div class="code_editor">                        
-                        <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">                        
-                        <div class="my-code">
-                            <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key)<br> => accum[key], obj)<br><br>
-
-                                const compose = (...fns) => res => fns.reduce((accum, next)<br> => next(accum), res)<br><br>
-                                
-                                const unfold = (f, seed) => {<br>
-                                  const go = (f, seed, acc) => {<br>
-                                    const res = f(seed)<br>
-                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc<br>
-                                  }<br>
-                                  return go(f, seed, [])<br>
-                                }</p>                            
-                        </div>                       
-                    </div>                    
-                </div>
-                <ul>
-                    <li class="titulo-projeto">Título do projeto</li>
-                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
-                    <li class="ups-ordem">   
-                        <div class="coment-up-efeito">                   
-                            <img src="img/coment-icon.svg" alt="icone de comentario">
-                            <span class="coment-up">9</span>
-                        </div>                        
-
-                        <div class="love-up-efeito">
-                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                            <span class="love-up">9</span>  
-                        </div>
-                            
-                        <div class="cod-profile">
-                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
-                            <p class="name-user">@Harry</p> 
-                        </div>                 
-                    </li>
-                </ul>
-            </div>
-
-            <div class="lista-projeto lista-projeto2">
-                
-                <div class="code">    
-                    <div class="code_editor">                        
-                        <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">                            
-                        <div class="my-code">
-                            <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key)<br> => accum[key], obj)<br><br>
-
-                                const compose = (...fns) => res => fns.reduce((accum, next)<br> => next(accum), res)<br><br>
-                                
-                                const unfold = (f, seed) => {<br>
-                                const go = (f, seed, acc) => {<br>
-                                    const res = f(seed)<br>
-                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc<br>
-                                }<br>
-                                return go(f, seed, [])<br>
-                                }</p>                            
-                        </div>                       
-                    </div>                    
-                </div>
-                <ul>
-                    <li class="titulo-projeto">Título do projeto</li>
-                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
-                    <li class="ups-ordem">   
-                        <div class="coment-up-efeito">                   
-                            <img src="img/coment-icon.svg" alt="icone de comentario">
-                            <span class="coment-up">9</span>
-                        </div>
-
-                        <div class="love-up-efeito">
-                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                            <span class="love-up">9</span>  
-                        </div>
-                        
-                        <div class="cod-profile">
-                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
-                            <p class="name-user">@Harry</p> 
-                        </div>            
-                    </li>
-                </ul>                    
-            </div>
-            <div class="lista-projeto lista-projeto3">
-                
-                <div class="code">    
-                    <div class="code_editor">                        
-                        <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">                            
-                        <div class="my-code">
-                            <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key)<br> => accum[key], obj)<br><br>
-
-                                const compose = (...fns) => res => fns.reduce((accum, next)<br> => next(accum), res)<br><br>
-                                
-                                const unfold = (f, seed) => {<br>
-                                    const go = (f, seed, acc) => {<br>
-                                    const res = f(seed)<br>
-                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc<br>
-                                    }<br>
-                                    return go(f, seed, [])<br>
-                                }</p>                            
-                        </div>                       
-                    </div>                    
-                </div>
-                <ul>
-                    <li class="titulo-projeto">Título do projeto</li>
-                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
-                    <li class="ups-ordem">   
-                        <div class="coment-up-efeito">                   
-                            <img src="img/coment-icon.svg" alt="icone de comentario">
-                            <span class="coment-up">9</span>
-                        </div>
-
-                        <div class="love-up-efeito">
-                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                            <span class="love-up">9</span>  
-                        </div>
-                        
-                        <div class="cod-profile">
-                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
-                            <p class="name-user">@Harry</p> 
-                        </div>                  
-                    </li>
-                </ul>                
-            </div>
-            <div class="lista-projeto lista-projeto4">
-                
-                <div class="code">    
-                    <div class="code_editor">                        
-                        <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">                            
-                        <div class="my-code">
-                            <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key)<br> => accum[key], obj)<br><br>
-
-                                const compose = (...fns) => res => fns.reduce((accum, next)<br> => next(accum), res)<br><br>
-                                
-                                const unfold = (f, seed) => {<br>
-                                    const go = (f, seed, acc) => {<br>
-                                    const res = f(seed)<br>
-                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc<br>
-                                    }<br>
-                                    return go(f, seed, [])<br>
-                                }</p>                            
-                        </div>                       
-                    </div>                    
-                </div>
-                <ul>
-                    <li class="titulo-projeto">Título do projeto</li>
-                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
-                    <li class="ups-ordem">   
-                        <div class="coment-up-efeito">                   
-                            <img src="img/coment-icon.svg" alt="icone de comentario">
-                            <span class="coment-up">9</span>
-                        </div>
-
-                        <div class="love-up-efeito">
-                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                            <span class="love-up">9</span>  
-                        </div>
-                        
-                        <div class="cod-profile">
-                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
-                            <p class="name-user">@Harry</p> 
-                        </div>               
-                    </li>
-                </ul>               
-            </div>
-
-            <!-- ====================================================================================================  -->
-            <div class="lista-projeto">
-                
-                <div class="code" style="background-color: #FFFFFF;">    
-                    <div class="code_editor">                        
-                        <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">                            
-                        <div class="my-code">
-                            <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key)<br> => accum[key], obj)<br><br>
-
-                                const compose = (...fns) => res => fns.reduce((accum, next)<br> => next(accum), res)<br><br>
-                                
-                                const unfold = (f, seed) => {<br>
-                                    const go = (f, seed, acc) => {<br>
-                                    const res = f(seed)<br>
-                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc<br>
-                                    }<br>
-                                    return go(f, seed, [])<br>
-                                }</p>                            
-                        </div>                       
-                    </div>                    
-                </div>
-                <ul>
-                    <li class="titulo-projeto">Título do projeto</li>
-                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
-                    <li class="ups-ordem">   
-                        <div class="coment-up-efeito">                   
-                            <img src="img/coment-icon.svg" alt="icone de comentario">
-                            <span class="coment-up">9</span>
-                        </div>
-
-                        <div class="love-up-efeito">
-                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                            <span class="love-up">9</span>  
-                        </div>
-                        
-                        <div class="cod-profile">
-                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
-                            <p class="name-user">@Harry</p> 
-                        </div>              
-                    </li>
-                </ul>               
-            </div>
-            <div class="lista-projeto">
-                
-                <div class="code" style="background-color: #000000;">    
-                    <div class="code_editor">                        
-                        <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">                            
-                        <div class="my-code">
-                            <p>const pluckDeep = key => obj => key.split('.').reduce((accum, key)<br> => accum[key], obj)<br><br>
-
-                                const compose = (...fns) => res => fns.reduce((accum, next)<br> => next(accum), res)<br><br>
-                                
-                                const unfold = (f, seed) => {<br>
-                                    const go = (f, seed, acc) => {<br>
-                                    const res = f(seed)<br>
-                                    return res ? go(f, res[1], acc.concat([res[0]])) : acc<br>
-                                    }<br>
-                                    return go(f, seed, [])<br>
-                                }</p>                            
-                        </div>                       
-                    </div>                    
-                </div>
-                <ul>
-                    <li class="titulo-projeto">Título do projeto</li>
-                    <li class="descricao-projeto">Essa é a descrição do meu projeto</li>                    
-                    <li class="ups-ordem">   
-                        <div class="coment-up-efeito">                   
-                            <img src="img/coment-icon.svg" alt="icone de comentario">
-                            <span class="coment-up">9</span>
-                        </div>
-
-                        <div class="love-up-efeito">
-                            <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                            <span class="love-up">9</span>  
-                        </div>
-                        
-                        <div class="cod-profile">
-                            <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
-                            <p class="name-user">@Harry</p> 
-                        </div>                
-                    </li>
-                </ul>               
-            </div>
+            
         </section>
     </main>
-    <script src="css/index.js"></script>
+    <script src="css/base.js"></script>
     <script src="css/comunidade.js"></script>
-    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>    
 </body>
 </html>

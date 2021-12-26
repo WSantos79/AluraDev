@@ -22,21 +22,14 @@
 .code {
    height: 63%;  /* cor fundo */
 }
+#codigo {         
+    width: 95%;
+    height: 99.7%;
+    margin-left: -0.9rem;    
+}
 .code_editor {    
     height: 100%;
 }
 .cod-profile {
     margin-left: 60%;
-  }
-.lista-projeto1 .code {
-    background: #5F75E2;    
-}    
-.lista-projeto2 .code {
-    background: #FF6BCD;    
-}    
-.lista-projeto3 .code {
-    background: #FFC46B;    
-}    
-.lista-projeto4 .code {
-    background: #9AFF6B;    
-}    
+}

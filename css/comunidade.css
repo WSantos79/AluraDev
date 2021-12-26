@@ -1,6 +1,6 @@
 .exibicao-projetos{  
     width: 90rem;
-    height: 61,5rem; /* 61,5rem  */ 
+    
     left: 21rem;     
     top: 15.2%;
     position: absolute;
@@ -17,24 +17,17 @@
     border-radius: 8px;
     background: rgba(0, 0, 0, 0.16);    
     margin: 0 24px 24px 0px;  
-}
-.lista-projeto1 .code {
-    background: #9AFF6B;    
-}    
-.lista-projeto2 .code {
-    background: #6B83FF;    
-}    
-.lista-projeto3 .code {
-    background: #FFC46B;    
-}    
-.lista-projeto4 .code {
-    background: #FF6BCD;  
-}    
+}  
 .my-code  {
     font-size: 11px;
     line-height: 15px;    
     color: #FFFFFF;  /* retirar depois ? */
     font-family: 'Roboto Mono', monospace;  /* retirar depois ? */
+}
+#codigo {    
+    width: 102%;    
+    height: 103%;
+    margin-left: -0.9rem;    
 }
 .titulo-projeto {
     font-weight: 700;     
@@ -44,6 +37,10 @@
     line-height: 31px;
     color: #FFFFFF;
     margin: 1.5rem 1.5rem 0 1.5rem;
+    width:max-content;
+}
+.titulo-projeto:hover {
+    cursor: pointer;
 }
 .descricao-projeto {   
     font-style: normal;
@@ -92,7 +89,7 @@
   margin-left: 30%;
 }
 .name-user{
-    margin: 0.3rem 0 0 0.52rem;
+    margin: 0.1rem 0 0 0.52rem;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;

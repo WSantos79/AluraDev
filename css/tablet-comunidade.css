@@ -22,6 +22,11 @@
 .code {
    height: 55%;  /* cor fundo */
 }
+#codigo {    
+    width: 98%;    
+    height: 103%;
+    margin-left: -0.9rem;    
+}
 .code_editor {    
     height: 100%;
 }

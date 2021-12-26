@@ -64,7 +64,7 @@
 }
 .menu-principal {
     position: absolute;
-    right: 13rem;
+    right: 25vw;
     top: 9rem;  
     white-space: nowrap;
     z-index: 2;
@@ -76,7 +76,7 @@
     z-index: 2;
     position: absolute;
     top: 21rem;
-    right: 12rem;
+    right: 23vw;
 }
 .profile span {
     position: absolute;

@@ -6,11 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/hardcore.css">
-
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css">
-        <link rel="stylesheet" media="(min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
 
+        <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css">
+
+        <link rel="stylesheet" media="(min-width: 481px) and (max-width: 1024px)" href="css/tablet.css">
+
+      <!--  <link rel="stylesheet" media="(min-width: 1025px) and (max-width: 1024px)" href="css/laptop.css"> -->
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
         <title>Alura Challenge Front 2021</title>
@@ -21,7 +23,7 @@
             <img data-logo-alura src="img/Logo.svg" alt="logo do site">                          
 
             <form action="./">
-                <input class="input-busca" type="search" name="busca"  placeholder="Busque por algo">
+                <input required="required" class="input-busca" type="search" name="busca"  placeholder="Busque por algo">
             </form>
 
             <div class="profile">
@@ -52,7 +54,8 @@
       return res ? go(f, res[1], acc.concat([res[0]])) : acc
    }
    return go(f, seed, [])
-}</code>    
+}
+                        </code>    
                     </div>
 
                 </div>                    
@@ -121,6 +124,8 @@
     </main>
 
     <script src="css/index.js"></script>
+    <script src="css/base.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const criarTarefa = (evento) => {
+/*const criarTarefa = (evento) => {
     evento.preventDefault();
 
     const input = document.querySelector(".form-input");
@@ -22,5 +22,15 @@ const novaTarefa = document.querySelector(".form-button");
 
 
 novaTarefa.addEventListener('click', criarTarefa);
+*/
 
+let i = 0
 
+if( i == 0 ){
+    console.log(`if ${i}`);
+    i=2;
+}else{
+    console.log(`else ${i}`);
+    i =  5;
+}
+console.log(i);

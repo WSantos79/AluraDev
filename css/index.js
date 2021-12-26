@@ -1,60 +1,93 @@
-const menu = document.querySelector('.icon-menu');
-const iconBusca = document.querySelector('[data-search]');
+/*  -------------------- mudar a cor do code de projeto ------------------------------  */
+const codeCor = document.querySelector('.code');
+const mudarCor = () => {
+  const valueCor = document.querySelector('.rectangle-color').value;
+  const codeCor = document.querySelector('.code');
 
-
-/*  --------------------barra de search mobile ------------------------------  */
-let x = 0;
-const barraPesquisa = (evento) =>  {
-  evento.preventDefault();    
-
-  const logoAlura = document.querySelector('[data-logo-alura]');
-  const input = document.querySelector('.input-busca');
-  if(x == 0){
-    iconBusca.setAttribute('src', 'img/close-icon.svg');
-    iconBusca.style.margin = `0`;
-    input.style.display = `block`;
-    logoAlura.style.display = `none`;
-    menu.style.display = `none`;
-    x = 1;
-  }else{
-    iconBusca.setAttribute('src', 'img/search-icon.svg');
-    iconBusca.style.margin = `0 1rem`;
-    input.style.display = `none`;
-    logoAlura.style.display = `block`;
-    menu.style.display = `block`;
-    x = 0;
-  }
+  codeCor.style.background = `${valueCor}`;
 }
 
-iconBusca.addEventListener('click', barraPesquisa);
+const btnCor = document.querySelector('.rectangle-color');
 
-/*  --------------------barra de menu smart mobile------------------------------  */
-let i = 0;
-const abriMenu = (evento) => {
-  evento.preventDefault();
+btnCor.addEventListener('input', mudarCor);
 
-  const imgMenu = document.querySelector('[data-img-menu]');
-  const menuTotal = document.querySelector('.menu-principal');
-  const barraMenu = document.querySelector('.menu-smart');
-  const usuario = document.querySelector('.profile');
+/*  --------------------Efeito  High Light ------------------------------  */
+const btnHighLight = document.querySelector('.btn');
 
-  if (i == 0){ 
-  menuTotal.style.display = `block`;
-  barraMenu.style.display = `block`;
-  usuario.style.display = `block`;
-  imgMenu.setAttribute('src', 'img/close-icon.svg');
-  i = 1;
+btnHighLight.onclick = () => {
+  const btnLinguagem = document.querySelector('.input-linguagem');
+  const linguagem = btnLinguagem.options[btnLinguagem.selectedIndex].text;
+  const code = document.getElementById('codigo');
+  const areaCodigo = document.querySelector('.my-code');
 
-  }else{
-    menuTotal.style.display = `none`;
-    barraMenu.style.display = `none`;
-    usuario.style.display = `none`;
-    imgMenu.setAttribute('src', 'img/menu-icon.svg');
-    i = 0;
-  }
+  const codigo = areaCodigo.innerText;
+
+  code.classList = `hljs ${linguagem}`;
+
+  areaCodigo.querySelector('code').textContent = codigo;
+
+  hljs.highlightElement(areaCodigo.querySelector('code'));
 }
 
-menu.addEventListener('click', abriMenu);
+/* Abrindo conexão com o banco de dados indexdDB  */
+
+var connection;
+
+var openRequest = window.indexedDB.open('aluradev', 1);
+
+openRequest.onupgradeneeded = (e) => { /* Cria ou altera um banco já existente */
+  let minhaConnection = e.target.result;
+
+  minhaConnection.createObjectStore('codigos', { autoIncrement: true });
+};
+
+openRequest.onsuccess = (e) => { /* Conexão obtida com sucesso */
+  connection = e.target.result;
+};
+
+openRequest.onerror = (e) => { /* Algum erro */
+  console.log(e.target.error);
+};
+
+/* Interagindo com o banco de dados indexdDB  */
+// --------------------------------------------------- Salvando projeto no indexedDB ------------------------------------------------------------
+const btnSalvar = document.querySelector('.input-salvar');
+
+btnSalvar.onclick = (eventoSalvar) => {
+  eventoSalvar.preventDefault();
+  
+  const btnLinguagem = document.querySelector('.input-linguagem');
+  const linguagem = btnLinguagem.options[btnLinguagem.selectedIndex];
+
+  const codigo = document.getElementById('codigo');
+  const nome = document.querySelector('[data-nomeProjeto]');
+  const descricao = document.getElementById('descricao-projeto');
+  const cor = document.querySelector('.rectangle-color');
+
+  const dados = { nome: `${nome.value}`, descricao: `${descricao.value}`, linguagem: `${linguagem.text}`, cor: `${cor.value}`, codigo: `${codigo.innerText}` }
+
+  let transaction = connection.transaction(['codigos'], 'readwrite');
+
+  let store = transaction.objectStore('codigos');
+
+  let request = store.add(dados);
+
+  request.onsuccess = (e) => {
+    alert(`Projeto salvo com sucesso, acesse no menu "comunidade"`);
+
+    // limpando os inputs
+    nome.value = '';
+    descricao.value = '';
+    linguagem.text = 'JavaScript';
+    cor.value = '#6BD1FF';
+    codigo.innerText = '';
+    codeCor.style.background = `#6BD1FF`;
+  }
+
+  request.onerror = (e) => {
+    console.log(e.target.error);
+  }
+}
 
 /*  -------------------- TAB dentro do text area ------------------------------  
 document.getElementById('codigo').addEventListener('keydown', function (e) {
@@ -74,59 +107,3 @@ document.getElementById('codigo').addEventListener('keydown', function (e) {
     e.preventDefault();
   }
 }, false);*/
-
-
-/*  -------------------- mudar a cor do code de projeto ------------------------------  */
-const mudarCor = () => {
-
-  const valueCor = document.querySelector('.rectangle-color').value;
-  const codeCor = document.querySelector('.code');
-    
-  codeCor.style.background = `${valueCor}`;
-  }
-
-  const btnCor = document.querySelector('.rectangle-color');
-  
-  btnCor.addEventListener('input', mudarCor);
- 
-/*  --------------------Efeito  High Light ------------------------------  */
-
-
-
-const aplicaHighlight = () => {
-  const btnLinguagem = document.querySelector('.input-linguagem');
-  const linguagem = btnLinguagem.options[btnLinguagem.selectedIndex].text;  
-  const code = document.getElementById('codigo');
-  const areaCodigo = document.querySelector('.my-code');
-
-  const codigo = areaCodigo.innerText;
-  
-  code.classList = `hljs ${linguagem}`;
-
-  areaCodigo.querySelector('code').textContent = codigo;
-  
-
-  hljs.highlightElement(areaCodigo.querySelector('code'));
-  
-}
-const btbHighLight = document.querySelector('.btn');
-
-btbHighLight.addEventListener('click', aplicaHighlight);
-
-
-/*  --------------------Eu tentando salvar projeto ------------------------------  */
-
-const salvarProjeto = (eventoSalvar) => {
-  eventoSalvar.preventDefault();
-
-  const textArea = document.getElementById('codigo').value;
-  const nome = document.querySelector('[data-nomeProjeto]').value;
-  const descricao = document.getElementById('descricao-projeto').value;
-  const linguagem = document.querySelector('.input-linguagem').value;
-  const cor = document.querySelector('.rectangle-color').value;
-
-}
-
-const btnSalvar = document.querySelector('.input-salvar');
-
-btnSalvar.addEventListener('click', salvarProjeto);
