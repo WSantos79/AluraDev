@@ -50,11 +50,22 @@ openRequest.onerror = (e) => { /* Algum erro */
 };
 
 /* Interagindo com o banco de dados indexdDB  */
-// --------------------------------------------------- Salvando projeto no indexedDB ------------------------------------------------------------
+// verificando se esta tudo preenchido --------------
 const btnSalvar = document.querySelector('.input-salvar');
 
 btnSalvar.onclick = (eventoSalvar) => {
   eventoSalvar.preventDefault();
+  const nome = document.querySelector('[data-nomeProjeto]');
+  const descricao = document.getElementById('descricao-projeto');
+  if(nome.value != '' && descricao.value != '') {
+    salvarDados();
+  }else{
+    alert(`Preencha todos os campos`);
+  }
+}
+// --------------------------------------------------- Salvando projeto no indexedDB ------------------------------------------------------------
+function salvarDados (e) {
+  //e.preventDefault();
   
   const btnLinguagem = document.querySelector('.input-linguagem');
   const linguagem = btnLinguagem.options[btnLinguagem.selectedIndex];
@@ -63,6 +74,8 @@ btnSalvar.onclick = (eventoSalvar) => {
   const nome = document.querySelector('[data-nomeProjeto]');
   const descricao = document.getElementById('descricao-projeto');
   const cor = document.querySelector('.rectangle-color');
+  
+   
 
   const dados = { nome: `${nome.value}`, descricao: `${descricao.value}`, linguagem: `${linguagem.text}`, cor: `${cor.value}`, codigo: `${codigo.innerText}` }
 
@@ -71,7 +84,9 @@ btnSalvar.onclick = (eventoSalvar) => {
   let store = transaction.objectStore('codigos');
 
   let request = store.add(dados);
-
+  
+    
+ 
   request.onsuccess = (e) => {
     alert(`Projeto salvo com sucesso, acesse no menu "comunidade"`);
 
@@ -82,7 +97,7 @@ btnSalvar.onclick = (eventoSalvar) => {
     cor.value = '#6BD1FF';
     codigo.innerText = '';
     codeCor.style.background = `#6BD1FF`;
-  }
+ }
 
   request.onerror = (e) => {
     console.log(e.target.error);
