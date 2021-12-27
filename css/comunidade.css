@@ -16,7 +16,9 @@
     height: 34rem;  /* AUMENTAR   18.8rem; */     
     border-radius: 8px;
     background: rgba(0, 0, 0, 0.16);    
-    margin: 0 24px 24px 0px;  
+    margin: 0 24px 24px 0px;
+    position: relative;    
+    word-wrap: break-word;
 }  
 .my-code  {
     font-size: 11px;
@@ -37,7 +39,7 @@
     line-height: 31px;
     color: #FFFFFF;
     margin: 1.5rem 1.5rem 0 1.5rem;
-    width:max-content;
+    max-width: max-content;
 }
 .titulo-projeto:hover {
     cursor: pointer;
@@ -52,15 +54,13 @@
     margin: 0.5rem 1.5rem 0 1.5rem;
 }
 .ups-ordem {
-    margin: 2.2rem 0 0 2.1rem;
+    display: flex;
+    margin: 2.2rem 0 0 1.5rem;
 }
 .coment-up-efeito,
 .love-up-efeito {
     display:flex;
     padding: 8px; 
-}
-.ups-ordem {
-    display: flex;
 }
 .love-up-efeito {
     margin: 0 0 0 1.1rem;
@@ -85,11 +85,12 @@
 }
 .cod-profile {
   display: flex;
-  position: absolute;
-  margin-left: 30%;
+  position: relative;
+  margin-left: 55%;
+  margin-top: 0.1rem;
 }
 .name-user{
-    margin: 0.1rem 0 0 0.52rem;
+    margin: 0.3rem 0 0 0.52rem;
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;

@@ -30,18 +30,10 @@
 .code_editor {    
     height: 100%;
 }
-.cod-profile {
-    margin-left: 76%;
+.ups-ordem {
+    margin-left: 1rem;
 }
-.lista-projeto1 .code {
-    background: #5F75E2;    
-}    
-.lista-projeto2 .code {
-    background: #FF6BCD;    
-}    
-.lista-projeto3 .code {
-    background: #FFC46B;    
-}    
-.lista-projeto4 .code {
-    background: #9AFF6B;    
-}    
+.cod-profile {
+    margin-left: 67%;
+    margin-top: 0.1rem;
+} 

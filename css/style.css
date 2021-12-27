@@ -108,7 +108,7 @@ main .container {
   width: 54rem;
   position: absolute;
   left: 21.5rem;
-  top: 7.6rem;
+  top: 7.6rem;  
 }
 .code {
   background: #6bd1ff;
@@ -259,9 +259,11 @@ main .container {
   background: rgba(255, 255, 255, 0.24);
 }
 #descricao-projeto {
-  padding-top: 0rem;
+  padding-top: 1rem;
   padding-bottom: 1.5rem;
   margin: 1rem 0 2.5rem;
+  font-family: "Inter", sans-serif;
+  resize: none;
 }
 .input-salvar {
   color: #051d3b;

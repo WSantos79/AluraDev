@@ -87,10 +87,13 @@
                     <li class="titulo-menu">Seu projeto</li>
                     <form class="meu-projeto" action="./">
                         <li>                        
-                            <input class="projeto" type="text" name="nome-projeto" placeholder="Nome do seu projeto" data-nomeProjeto>
+                            <input class="projeto" type="text" placeholder="Nome do seu projeto" data-nomeProjeto maxlength="25" >
                         </li>
                         <li>                            
-                            <input class="projeto" id="descricao-projeto" type="text" name="descricao-projeto" placeholder="Descrição do seu projeto">
+                            <textarea class="projeto" id="descricao-projeto" type="text" placeholder="Descrição do seu projeto" maxlength="50" wrap="hard"></textarea>
+
+                           <!--  <textarea name="" id="" cols="30" rows="10">  </textarea> -->                          
+                           
                         </li>
                     </form>
                     <li class="titulo-menu">Personalização</li>

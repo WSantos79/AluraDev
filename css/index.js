@@ -57,10 +57,17 @@ btnSalvar.onclick = (eventoSalvar) => {
   eventoSalvar.preventDefault();
   const nome = document.querySelector('[data-nomeProjeto]');
   const descricao = document.getElementById('descricao-projeto');
-  if(nome.value != '' && descricao.value != '') {
-    salvarDados();
+  if(nome.value.length < 4) {
+    nome.focus();
+    nome.style.border = `solid 1px red`;
+  }else if(descricao.value.length < 4 ){
+    descricao.focus();
+    descricao.style.border = `solid 1px red`;
+    nome.style.border = `none`;
   }else{
-    alert(`Preencha todos os campos`);
+    descricao.style.border = `none`;
+    nome.style.border = `none`;
+    salvarDados();
   }
 }
 // --------------------------------------------------- Salvando projeto no indexedDB ------------------------------------------------------------
@@ -88,7 +95,7 @@ function salvarDados (e) {
     
  
   request.onsuccess = (e) => {
-    alert(`Projeto salvo com sucesso, acesse no menu "comunidade"`);
+    alert(`\n \n Projeto salvo com sucesso, acesse no menu "comunidade" \n`);
 
     // limpando os inputs
     nome.value = '';

@@ -31,5 +31,11 @@
     height: 100%;
 }
 .cod-profile {
-    margin-left: 60%;
+    margin-left: 27%;
+    margin-top: 0.1rem;
+}
+.ups-ordem {
+    position: static;        
+    margin-top: 1rem;  
+    margin-left: 1rem;
 }
