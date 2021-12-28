@@ -1,41 +1,129 @@
 /*  ------------------------------- COMUNIDADE -----------------------------------   */
 
 .exibicao-projetos {
-    position: relative;
-    left: 1rem;
-    right: 1rem;
+    width: 90vw;        
     display: flex;
-    flex-direction: column;
-    width: 92vw;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 .lista-projeto {
     margin-bottom: 2rem;
-    margin-left: 0;    
+    margin-left: 0;
     width: 92vw;
     height: 39.75rem;
+    word-wrap: break-word;
+    flex-grow: 1; 
+    flex-basis: 1; 
+    flex-shrink: 1; 
+    display: flex;
+    flex-direction: column;    
 }
 .my-code {
-    width: 100%; /* texto */
     font-size: 14px;
     line-height: 18px;
 }
-.code {
-   height: 63%;  /* cor fundo */
-}
 #codigo {         
-    width: 95%;
-    height: 99.7%;
-    margin-left: -0.9rem;    
-}
-.code_editor {    
+    width: auto;
     height: 100%;
+    margin-left: -0.9rem;   
 }
-.cod-profile {
-    margin-left: 27%;
-    margin-top: 0.1rem;
+/*   ----------------------   */
+.dados-projeto{  
+    display: inline-block;   
+    position: relative;
+    top: 1.5vw;
+    right: 1.5vw;
+    left: 1.5vw;    
+    width: auto;
+    height: 9rem;
+    word-wrap: break-word;
+    flex-direction: column;
+    margin-right: 0.2rem;
+ }
+ .titulo-projeto {
+     font-weight: 700;     
+     font-style: normal;
+     font-weight: bold;
+     font-size: 21px;
+     line-height: 31px;
+     color: #FFFFFF;
+ }
+ .linkProjeto {
+     text-decoration: none;
+     color: #ffffff;
+ }
+ .descricao-projeto {   
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 24px;
+     color: #FFFFFF;
+     opacity: 0.8;   
+     margin-top: 0.5rem;
+     margin-bottom: 1rem;
+ }
+ .dados-ordem{    
+     display: flex;
+     justify-content: space-between;   
+     position:relative;
+     margin-top: 0;
+     margin-bottom: 1rem;
+     margin-left: 0.2rem;
+ }
+ .ups-ordem {
+     display: flex;  
+     margin-left: 1rem;     
+ }
+ .love-up-efeito {
+     margin: 0 0 0 1.1rem;
+ }
+ .love-up,
+ .coment-up {
+     margin: 0 0 0 0.6rem;
+     color: #FFFFFF;
+ }
+ .coment-up-efeito:hover,
+ .love-up-efeito:hover {
+     background: rgba(255, 255, 255, 0.08);
+     border-radius: 16px;
+     cursor: pointer;
+ }
+ .coment-up-efeito:active,
+ .love-up-efeito:active {
+     background: rgba(255, 255, 255, 0.16)
+ }
+ .cod-profile {
+     display: flex;
+     position: relative;
+     margin-top: 0.1vw;
+ }
+ .name-user{   
+     margin: 0 1rem 0 0.5rem;
+     font-size: 16px;
+     line-height: 24px;
+     color: #FFFFFF;
+ }
+ 
+ /* menu */
+ .menu-principal {
+    position: absolute;
+    right: 45%;
+    top: 8rem; 
+    white-space: nowrap;
+    z-index: 2;    
+    flex-wrap: wrap;
 }
-.ups-ordem {
-    position: static;        
-    margin-top: 1rem;  
-    margin-left: 1rem;
+.menu-item {
+    margin: 0;
+} 
+.profile {
+    z-index: 2;
+    position: absolute;
+    top: 21rem;
+    right: 48%;
+}
+.profile span {
+    position: absolute;
+    margin-top: 5px;
 }

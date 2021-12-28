@@ -109,8 +109,22 @@ function salvarDados (e) {
   request.onerror = (e) => {
     console.log(e.target.error);
   }
-}
+} 
 
+/// menu efeito
+
+const imgcomu = document.querySelector('[data-comuImg]');
+const comu = document.querySelector('[data-comu]');
+
+comu.onmouseover = () =>{
+  imgcomu.style.background = `#5081FB`;
+}
+imgcomu.onclick = () => {
+  location.replace("comunidade.html")
+}
+imgcomu.onmouseover = () => {
+  comu.style.opacity = `0.72`;
+}
 /*  -------------------- TAB dentro do text area ------------------------------  
 document.getElementById('codigo').addEventListener('keydown', function (e) {
   if (e.keyCode === 9) { // TAB

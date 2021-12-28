@@ -17,7 +17,7 @@ body {
   justify-content: space-between;
 }
 .input-busca {
-  width: 54rem;
+  width: 54vw;
   height: 3.5rem;
   padding: 0 14px;
   background: rgba(255, 255, 255, 0.16);
@@ -39,15 +39,15 @@ body {
   font-size: 1rem;
   line-height: 24px;
   color: #ffffff;
-  margin: 0 0 0 4.8em;
-  padding: 0.7rem 1rem 0.7rem 0.7rem;
   border-radius: 8px;
+  padding: 0 1rem 0 4.4rem;  
 }
 .profile:hover {
   background: rgba(255, 255, 255, 0.08);;
 }
 .profile img {
   margin: 0 8px;
+
 }
 .profile img:hover {
   cursor: pointer;
@@ -58,26 +58,49 @@ body {
 .menu {
   margin: 0 0 1rem;
   opacity: 56%;
+  display: flex;
 }
-.menu:hover {
-  opacity: 72%;
-  background: rgba(80, 129, 251, 0.64);
-  border-radius: 1rem;
-  height: 48px;
-  width: 48px;
-}
-.no-opacity {
-  opacity: 100%;
+.no-opacity,
+#no-opacity {
+  opacity: 1;
 }
 .menu-item {
-  padding: 0 0 0 1rem;
   color: #ffffff;
   font-size: 1rem;
-  text-decoration: none;
-
-  line-height: 24px;
+  text-decoration: none;  
+  line-height: 24px;  
+  position: relative;
+  padding: 0 0 0 1rem; 
+  opacity: 0.56;
+  top: 0.9rem; 
+}
+.menu-item:hover, .menu:hover {
+  opacity: 0.72;
+}
+.menu-item:focus {
+  opacity: 1;
+}
+.rectangle37 {
+  background: rgba(80, 129, 251, 0.16);
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  border-radius: 1rem;
+  position: relative;
+}
+.rectangle37:hover {
+  background: rgba(80, 129, 251, 0.64);
+  cursor: pointer;
+}
+.rectangle37_focus {
+  background: rgba(80, 129, 251, 1);
+}
+.rectangle37 img {
   position: absolute;
-  margin: 0.9% 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 .titulo-menu {
   color: #ffffff;
@@ -86,29 +109,16 @@ body {
   text-transform: uppercase;
   margin: 0 0 1rem;
 }
-.rectangle37 {
-  background: rgba(80, 129, 251, 0.16);
-  height: 48px;
-  width: 48px;
-  display: inline-block;
-  border-radius: 1rem;
-  text-align: center;
-}
-.rectangle37_focus {
-  background: rgba(80, 129, 251, 1);
-}
-.rectangle37 img {
-  margin-top: 25%;
-}
 main .container {
-  display: flex;
+  display: flex;  
   justify-content: space-between;
 }
-.div-code {
-  width: 54rem;
-  position: absolute;
-  left: 21.5rem;
-  top: 7.6rem;  
+.menu-principal {  
+  width: 12.1vw;
+  flex-grow: 0.5;
+}
+.div-code {   
+  width: 54vw;  
 }
 .code {
   background: #6bd1ff;
@@ -153,7 +163,7 @@ main .container {
   white-space: pre-wrap;
 }
 .btn {
-  width: 54rem;
+  width: 54vw;
   height: 56px;
   background: rgba(80, 129, 251, 0.08);
   border-radius: 8px;
@@ -181,9 +191,9 @@ main .container {
   background: #2D415B;
   border-radius: 8px;
   width: 69vw;
-  height: 35rem;
+  height: 120vw;
   right: 0.9rem;
-  top: 7.9rem;
+  top: 7rem;
   z-index: 1;
 }
 .linha {
@@ -191,7 +201,7 @@ main .container {
   border: 1px solid #FFFFFF;
   opacity: 0.08;
   position: absolute;  
-  top: 30%;
+  top: 10rem;
   left: 10%;
 }
 
@@ -233,7 +243,7 @@ main .container {
 /* ---------------------------------  ------------------------  ------------------------   */
 .projeto,
 .input-linguagem {
-  width: 272px;
+  width: 16.7vw;
   height: 56px;
 
   background: rgba(255, 255, 255, 0.16);
@@ -248,7 +258,7 @@ main .container {
   outline: none;
 }
 .input-linguagem {
-  width: 100%;
+  width: 18.5vw;
   background: #3a4a5e;
   resize: none;
 }
@@ -268,7 +278,7 @@ main .container {
 .input-salvar {
   color: #051d3b;
   background: #5081fb;
-  width: 302px;
+  width: 18.5vw;
   height: 56px;
 
   border-radius: 8px;

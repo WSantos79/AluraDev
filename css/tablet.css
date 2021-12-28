@@ -2,7 +2,13 @@
     margin: 5% 0 0 2rem;
     width: 90%;
 }
+main .container {
+    flex-direction: column;
+    
+}
 .menu-principal,
+.menu-principal
+.titulo-menu,
 .profile,
 .icon-busca,
 .titulo-menu{
@@ -15,14 +21,10 @@
     display: flex;
 }
 .input-busca {
-    width: 30rem;
+    width: 50vw;
 }
-.div-code {     
-    position: relative;
+.div-code {    
     width: 92vw;
-    left: 2rem;
-    right: 1rem;    
-    top: 3rem; 
 }
 .btn { 
     width: 92vw;
@@ -33,12 +35,14 @@
 .sobre-projeto {
    position: relative;
    top: 3rem;
-}
+   margin-bottom: 01rem;
+}   
 .meu-projeto {
-    display: flex;
-    flex-wrap: wrap;
-}    
-.meu-projeto .titulo-menu {
+    width: 92vw;
+    justify-content: space-between;
+}
+.meu-projeto,
+.titulo-menu {
     display: flex;
     flex-wrap: wrap;
 }
@@ -51,11 +55,12 @@
     margin-top: 0;
 }
 .rectangle29,
-.linguagem {
-    width: 45vw;
+.input-linguagem {
+    width: 44vw;
 }
 .input-salvar{
     width: 92vw;
+    margin-bottom: 1rem;
 }
 .menu-smart { 
     width: 34vw;
@@ -64,13 +69,14 @@
 }
 .menu-principal {
     position: absolute;
-    right: 25vw;
+    right: 19%;
     top: 9rem;  
     white-space: nowrap;
     z-index: 2;
+    flex-wrap: wrap;
 }
 .menu-item {
-    margin: 28% 0;
+    margin: 0;
 }
 .profile {
     z-index: 2;
@@ -84,4 +90,26 @@
 }
 .linha {
     width: 27vw;
+}
+/* menu */
+.menu-principal {
+    position: absolute;
+    right: 9rem;
+    top: 9rem; 
+    white-space: nowrap;
+    z-index: 2;    
+    flex-wrap: wrap;
+}
+.menu-item {
+    margin: 0;
+} 
+.profile {
+    z-index: 2;
+    position: absolute;
+    top: 21rem;
+    right: 10rem;
+}
+.profile span {
+    position: absolute;
+    margin-top: 5px;
 }

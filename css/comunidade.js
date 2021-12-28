@@ -50,30 +50,33 @@ function newCode() {
                 <img class="ellipse" src="img/mac_buttons.svg" alt="botão mac">                        
                 <div class="my-code">
                     <code class="hljs" id="codigo" aria-autocomplete="none" spellcheck="false" role="presentation">${dado.codigo}</code>                   
-                </div>                       
-          </div>                    
+                </div>                                       
+          </div>                     
       </div>
-      <ul>
-          <li class="titulo-projeto">${dado.nome}</li>
-          <li class="descricao-projeto">${dado.descricao}</li>                    
-          <li class="ups-ordem">   
-              <div class="coment-up-efeito">                   
-                   <img src="img/coment-icon.svg" alt="icone de comentario">
-                   <span class="coment-up">${numeroDeComentario}</span>
-              </div>                        
 
-              <div class="love-up-efeito">
-                    <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
-                    <span class="love-up">${numeroDeLikes}</span>  
-              </div>
-                            
-              <div class="cod-profile">
-                   <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">                    
-                   <p class="name-user">${nomeUsuario}</p> 
-              </div>                 
-          </li>
-      </ul>`
+      <ul class="dados-projeto">
+          <li class="titulo-projeto"><a class="linkProjeto" href="./">${dado.nome}</a></li>
+          <li class="descricao-projeto">${dado.descricao}</li>    
+      </ul>
+      <ul class="dados-ordem">                  
+                <li class="ups-ordem">   
+                    <div class="coment-up-efeito">                   
+                        <img src="img/coment-icon.svg" alt="icone de comentario">
+                        <span class="coment-up">${numeroDeComentario}</span>
+                    </div>                        
 
+                    <div class="love-up-efeito">
+                          <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
+                          <span class="love-up">${numeroDeLikes}</span>  
+                    </div>                                 
+                </li>
+                <li>
+                    <div class="cod-profile">
+                          <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">
+                          <p class="name-user">${nomeUsuario}</p>
+                    </div>
+                </li>               
+          </ul>`          
       filho.innerHTML = conteudo;
       document.querySelector('.exibicao-projetos').appendChild(filho);
       atual.continue();
@@ -131,6 +134,20 @@ function btnAmei() {
       }
     })
   }
+}
+/// menu efeito
+
+const imghome = document.querySelector('[data-homeImg]');
+const home = document.querySelector('[data-home]');
+
+home.onmouseover = () =>{
+  imghome.style.background = `#5081FB`;
+}
+imghome.onclick = () => {
+  location.replace("index.html")
+}
+imghome.onmouseover = () => {
+  home.style.opacity = `0.72`;
 }
 
 function selecionarProjeto() { 

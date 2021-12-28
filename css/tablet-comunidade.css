@@ -1,39 +1,55 @@
 /*  ------------------------------- COMUNIDADE -----------------------------------   */
 
 .exibicao-projetos {
-    position: relative;
-    left: 2rem;
-    right: 1rem;
+    width: 92vw;
     display: flex;
     flex-direction: column;
-    width: 92vw;
+    flex-wrap: wrap;       
 }
 .lista-projeto {
     margin-bottom: 2rem;
     margin-left: 0;    
     width: 92vw;
     height: 35rem;
+    display: flex;
+    flex-direction: column; 
 }
 .my-code {
-    width: 100%; /* texto */
     font-size: 14px;
     line-height: 18px;
 }
-.code {
-   height: 55%;  /* cor fundo */
-}
 #codigo {    
-    width: 98%;    
-    height: 103%;
+    width: auto;    
+    height: 100%;
     margin-left: -0.9rem;    
 }
-.code_editor {    
-    height: 100%;
+.name-user{   
+    margin: 0 1rem 0 0.5rem;
 }
-.ups-ordem {
-    margin-left: 1rem;
+.love-up-efeito {
+    margin: 0 0 0 1.1rem;
 }
-.cod-profile {
-    margin-left: 67%;
-    margin-top: 0.1rem;
-} 
+.love-up,
+ .coment-up {
+     margin: 0 0 0 0.6rem;
+     color: #FFFFFF;
+ }
+ .menu-principal {    
+    right: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

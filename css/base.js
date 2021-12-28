@@ -38,7 +38,7 @@ const abriMenu = (evento) => {
   const usuario = document.querySelector('.profile');
 
   if (i == 0) {
-    menuTotal.style.display = `block`;
+    menuTotal.style.display = `flex`;   
     barraMenu.style.display = `block`;
     usuario.style.display = `block`;
     imgMenu.setAttribute('src', 'img/close-icon.svg');
@@ -54,4 +54,6 @@ const abriMenu = (evento) => {
 }
 
 menu.addEventListener('click', abriMenu);
+
+
 

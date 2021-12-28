@@ -13,8 +13,8 @@
     <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css">
     <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile-comunidade.css">
 
-    <link rel="stylesheet" media="(min-width: 481px) and (max-width: 1024px)" href="css/tablet.css">
-    <link rel="stylesheet" media="(min-width: 481px) and (max-width: 1024px)" href="css/tablet-comunidade.css">
+    <link rel="stylesheet" media="(min-width: 481px) and (max-width: 1080px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(min-width: 481px) and (max-width: 1080px)" href="css/tablet-comunidade.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <title>Comunidade - Alura Dev</title>
@@ -42,31 +42,30 @@
         </div>
     </header>
 
-    <main>
-            
+    <main>           
         <nav class="container">
             <ul class="menu-principal">
                 <li class="titulo-menu">Menu</li>
                 <li class="menu">
-                    <div class="rectangle37">
+                    <div class="rectangle37" data-homeImg>
                         <img src="img/Font Awesome Icon-1.svg" alt="icone codigo">
                     </div>
-                    <a class="menu-item" href="index.html">Editor de código</a>
+                    <a class="menu-item" href="index.html" data-home>Editor de código</a>
                 </li>
                 <li class="menu no-opacity">
-                    <div class="rectangle37 rectangle37_focus" >
+                    <div class="rectangle37 rectangle37_focus" data-comuImg>
                         <img src="img/Font Awesome Icon.svg" alt="icone comunidade">                         
                     </div>
-                    <a class="menu-item" href="comunidade.html">Comunidade</a>                                   
+                    <a class="menu-item" id="no-opacity" href="comunidade.html" data-comu>Comunidade</a>                                   
                 </li>
-            </ul>             
-        </nav> 
-        <section class="menu-smart">
-            <div class="linha"></div>
-        </section>
-        <section class="exibicao-projetos">
+            </ul> 
             
-        </section>
+            <section class="exibicao-projetos"></section>
+
+            <section class="menu-smart">
+                <div class="linha"></div>
+            </section>
+        </nav>         
     </main>
     <script src="css/base.js"></script>
     <script src="css/comunidade.js"></script>

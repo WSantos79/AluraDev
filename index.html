@@ -10,7 +10,7 @@
 
         <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css">
 
-        <link rel="stylesheet" media="(min-width: 481px) and (max-width: 1024px)" href="css/tablet.css">
+        <link rel="stylesheet" media="(min-width: 481px) and (max-width: 1080px)" href="css/tablet.css">
 
       <!--  <link rel="stylesheet" media="(min-width: 1025px) and (max-width: 1024px)" href="css/laptop.css"> -->
 
@@ -39,58 +39,62 @@
             </section>
         </div>
     </header>
-    <main>
-        <section class="div-code">        
-            <div class="code">    
-                <div class="code_editor">                        
-                    <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">
-                    
-                    <div class="my-code">
-                        <code class="hljs JavaScript language-JavaScript" id="codigo" contenteditable="true" autocapitalize="none" aria-autocomplete="none" spellcheck="false" role="presentation">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-                            <br>const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                            <br>const unfold = (f, seed) => {
-   const go = (f, seed, acc) => {
-      const res = f(seed)
-      return res ? go(f, res[1], acc.concat([res[0]])) : acc
-   }
-   return go(f, seed, [])
-}
-                        </code>    
-                    </div>
+    <main>     
 
-                </div>                    
-            </div>
-            <input class="btn" type="button" value="Visualizar com o highlight">
-        </section>
         <section class="menu-smart">
             <div class="linha"></div>
         </section>
+
         <nav class="container">
+            
             <ul class="menu-principal"> 
                 <li class="titulo-menu">Menu</li>
                 <li class="menu no-opacity">
-                    <div class="rectangle37 rectangle37_focus">
-                        <img src="img/icon_code.svg" alt="icone codigo">
+                    <div class="rectangle37 rectangle37_focus" data-homeImg>
+                        <img src="img/iconCode.svg" alt="icone codigo">
                     </div>
-                    <a class="menu-item" href="index.html">Editor de código</a>
+                    <a class="menu-item" id="no-opacity" href="index.html" data-home>Editor de código</a>
                 </li>
                 <li class="menu">
-                    <div class="rectangle37">
-                        <img src="img/icon_users.svg" alt="icone comunidade">                     
+                    <div class="rectangle37" data-comuImg>
+                        <img src="img/iconUsers.svg" alt="icone comunidade">                     
                     </div>
-                    <a class="menu-item" href="comunidade.html">Comunidade</a>         
+                    <a class="menu-item" href="comunidade.html" data-comu>Comunidade</a>                            
                 </li>
-            </ul>            
+            </ul> 
+
+            <section class="div-code">        
+                <div class="code">    
+                    <div class="code_editor">                        
+                        <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">
+                        
+                        <div class="my-code">
+                            <code class="hljs JavaScript language-JavaScript" id="codigo" contenteditable="true" autocapitalize="none" aria-autocomplete="none" spellcheck="false" role="presentation">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                                <br>const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                                <br>const unfold = (f, seed) => {
+       const go = (f, seed, acc) => {
+          const res = f(seed)
+          return res ? go(f, res[1], acc.concat([res[0]])) : acc
+       }
+       return go(f, seed, [])
+    }
+                            </code>    
+                        </div>
+    
+                    </div>                    
+                </div>
+                <input class="btn" type="button" value="Visualizar com o highlight">
+            </section>
 
             <section class="sobre-projeto">
                 <ul>
                     <li class="titulo-menu">Seu projeto</li>
                     <form class="meu-projeto" action="./">
                         <li>                        
-                            <input class="projeto" type="text" placeholder="Nome do seu projeto" data-nomeProjeto maxlength="25" >
+                            <input class="projeto" type="text" placeholder="Nome do seu projeto" data-nomeProjeto maxlength="25" spellcheck="false" >
                         </li>
                         <li>                            
-                            <textarea class="projeto" id="descricao-projeto" type="text" placeholder="Descrição do seu projeto" maxlength="50" wrap="hard"></textarea>
+                            <textarea class="projeto" id="descricao-projeto" type="text" placeholder="Descrição do seu projeto" maxlength="50" wrap="hard" spellcheck="false"></textarea>
 
                            <!--  <textarea name="" id="" cols="30" rows="10">  </textarea> -->                          
                            
@@ -121,7 +125,6 @@
                         </li>
                     </form>   
                 </ul>
-
             </section>
         </nav>        
     </main>
