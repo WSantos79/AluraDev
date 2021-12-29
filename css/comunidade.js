@@ -178,6 +178,8 @@ function btnAmei() {
 
 const imghome = document.querySelector('[data-homeImg]');
 const home = document.querySelector('[data-home]');
+const imgcomu = document.querySelector('[data-comuImg]');
+const comu = document.querySelector('[data-comu]'); // ajustar
 
 home.onmouseover = () =>{
   imghome.style.background = `#5081FB`;
@@ -187,6 +189,17 @@ imghome.onclick = () => {
 }
 imghome.onmouseover = () => {
   home.style.opacity = `0.72`;
+}
+
+function aumenta () {
+  imgcomu.style.width = `50px`;
+  imgcomu.style.height = `50px`;
+  comu.style.fontSize = `1.05rem`;
+}
+function diminui (){
+	imgcomu.style.width = `48px`;
+  imgcomu.style.height = `48px`;  
+  comu.style.fontSize = `1rem`; 
 }
 
 

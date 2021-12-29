@@ -127,16 +127,31 @@ function salvarDados (e) {
 
 const imgcomu = document.querySelector('[data-comuImg]');
 const comu = document.querySelector('[data-comu]');
+const imghome = document.querySelector('[data-homeImg]');
+const home = document.querySelector('[data-home]');
 
 comu.onmouseover = () =>{
-  imgcomu.style.background = `#5081FB`;
+  imgcomu.style.background = `#5081FB`;  
 }
 imgcomu.onclick = () => {
-  location.replace("comunidade.html")
+  location.replace("comunidade.html");
 }
 imgcomu.onmouseover = () => {
   comu.style.opacity = `0.72`;
 }
+
+function aumenta () {
+  imghome.style.width = `50px`;
+  imghome.style.height = `50px`;
+  home.style.fontSize = `1.05rem`;
+ 
+}
+function diminui (){
+	imghome.style.width = `48px`;
+  imghome.style.height = `48px`;  
+  home.style.fontSize = `1rem`; 
+}
+
 /* --------------------- Projeto para editar existente ou nao ------------------------------------  */
 
 function editar (){

@@ -64,6 +64,11 @@ body {
 #no-opacity {
   opacity: 1;
 }
+.no-opacity:hover,
+.rectangle37_focus:hover {  
+  transition: 0.5s;
+}
+
 .menu-item {
   color: #ffffff;
   font-size: 1rem;
@@ -74,10 +79,12 @@ body {
   opacity: 0.56;
   top: 0.9rem; 
 }
-.menu-item:hover, .menu:hover {
+.opacity:hover {
   opacity: 0.72;
+  transition: 0.5s ease-in;
 }
-.menu-item:focus {
+.menu-item:focus,
+.menu:focus {
   opacity: 1;
 }
 .rectangle37 {
@@ -88,12 +95,16 @@ body {
   border-radius: 1rem;
   position: relative;
 }
-.rectangle37:hover {
+.rectangle37hover:hover {
   background: rgba(80, 129, 251, 0.64);
   cursor: pointer;
+  transition: 0.5s ease-in;
 }
 .rectangle37_focus {
   background: rgba(80, 129, 251, 1);
+}
+.rectangle37_focus:hover{
+  cursor: pointer;  
 }
 .rectangle37 img {
   position: absolute;
