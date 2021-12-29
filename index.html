@@ -12,8 +12,6 @@
 
         <link rel="stylesheet" media="(min-width: 481px) and (max-width: 1080px)" href="css/tablet.css">
 
-      <!--  <link rel="stylesheet" media="(min-width: 1025px) and (max-width: 1024px)" href="css/laptop.css"> -->
-
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
         <title>Alura Challenge Front 2021</title>
     </head>
@@ -64,12 +62,12 @@
             </ul> 
 
             <section class="div-code">        
-                <div class="code">    
+                <div class="code" data-code>
                     <div class="code_editor">                        
                         <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">
                         
                         <div class="my-code">
-                            <code class="hljs JavaScript language-JavaScript" id="codigo" contenteditable="true" autocapitalize="none" aria-autocomplete="none" spellcheck="false" role="presentation">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                            <code class="hljs JavaScript language-JavaScript" id="codigo" contenteditable="true" autocapitalize="none" aria-autocomplete="none" spellcheck="false" role="presentation"> <!-- const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
                                 <br>const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
                                 <br>const unfold = (f, seed) => {
        const go = (f, seed, acc) => {
@@ -78,7 +76,7 @@
        }
        return go(f, seed, [])
     }
-                            </code>    
+                             --></code>    
                         </div>
     
                     </div>                    
@@ -94,10 +92,7 @@
                             <input class="projeto" type="text" placeholder="Nome do seu projeto" data-nomeProjeto maxlength="25" spellcheck="false" >
                         </li>
                         <li>                            
-                            <textarea class="projeto" id="descricao-projeto" type="text" placeholder="Descrição do seu projeto" maxlength="50" wrap="hard" spellcheck="false"></textarea>
-
-                           <!--  <textarea name="" id="" cols="30" rows="10">  </textarea> -->                          
-                           
+                            <textarea class="projeto" id="descricao-projeto" type="text" placeholder="Descrição do seu projeto" maxlength="50" wrap="hard" spellcheck="false"></textarea>                                             
                         </li>
                     </form>
                     <li class="titulo-menu">Personalização</li>

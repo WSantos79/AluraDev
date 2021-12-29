@@ -16,9 +16,38 @@ openRequest.onsuccess = (e) => { /* Conexão obtida com sucesso */
 openRequest.onerror = (e) => { /* Algum erro */
   console.log(e.target.error);
 };
+// quando clica em um projeto para edita-lo
+function selecionarProjeto() { 
+  const projetos = document.querySelectorAll('.titulo-projeto');
+  for(let i = 0; i < projetos.length; i++) {
+    projetos[i].onclick = () => {
+
+      let esteCodigo = projetos[i].parentNode.previousSibling.previousSibling;
+      let linguagem = projetos[i].parentNode.previousSibling.previousSibling.firstChild.nextSibling.firstChild.nextSibling.nextSibling.nextSibling.firstChild.nextSibling.classList.value;
+      // retirando a classe que precisa
+      let lingua = linguagem.split(' ');
+
+      let descricao = projetos[i].nextSibling.nextSibling;
+      let nome = projetos[i];
+      let cor = projetos[i].parentNode.previousSibling.previousSibling.style.backgroundColor;
+     
+      const novoDado = {id: `1`, nome: `${nome.innerText}`, descricao: `${descricao.innerText}`, linguagem: `${lingua[1]}`, cor: `${cor}`, codigo: `${esteCodigo.innerText}`};  
+
+      let transaction = connection.transaction(['codigos'], 'readwrite');
+
+      let store = transaction.objectStore('codigos');
+    
+      let request = store.add(novoDado);
+    
+    request.onsuccess = (e) => {
+      //alert(`\n \n Projeto salvo para editar na home \n`);
+    }      
+    }  
+  }
+}
 
 
-/* ==================================================  recuperando dados do IndexedDB=================================================*/
+/* ==================================================  recuperando dados do IndexedDB=========================================================================================================================*/
 var ling = [];
 
 function newCode() {
@@ -39,7 +68,11 @@ function newCode() {
       // comentario, like e user
       let numeroDeComentario = 0;
       let numeroDeLikes = 0;
-      let nomeUsuario = '@Harry';
+      let nomeUsuario = '@Harry';     
+    
+      // substituindo caracteres do codigo para o navegador nao interpretar o HTML 
+      let newCode = dado.codigo.replace(/</g, "&lt;");
+      newCode = newCode.replace(/>/g, "&gt;;");
 
       // Criar o item da lista
       let filho = document.createElement('div');
@@ -49,8 +82,8 @@ function newCode() {
           <div class="code_editor">                        
                 <img class="ellipse" src="img/mac_buttons.svg" alt="botão mac">                        
                 <div class="my-code">
-                    <code class="hljs" id="codigo" aria-autocomplete="none" spellcheck="false" role="presentation">${dado.codigo}</code>                   
-                </div>                                       
+                    <code class="hljs" id="codigo" aria-autocomplete="none" spellcheck="false" role="presentation">${newCode}</code>                   
+                </div>   
           </div>                     
       </div>
 
@@ -77,11 +110,17 @@ function newCode() {
                     </div>
                 </li>               
           </ul>`          
+
+      
       filho.innerHTML = conteudo;
+      
       document.querySelector('.exibicao-projetos').appendChild(filho);
-      atual.continue();
 
       ling.push(`${dado.linguagem}`);
+
+      atual.continue();
+
+      
     } else {
       // add todos codigos recuperados com sucesso           
       btnAmei();
@@ -93,7 +132,7 @@ function newCode() {
     console.log(e.target.error.name);
   }
 }
-// aplicando o high light
+// aplicando o high light ----------------------------------------------------------------------------------
 function highlight() {
 
   const code = document.querySelectorAll('.hljs');
@@ -112,7 +151,7 @@ function highlight() {
 
   }
 }
-
+// botao like --------- ----------------------------------------------------------------------------------
 function btnAmei() {
   const btnLoveUp = document.querySelectorAll('.love-up-efeito');
   const up = document.querySelectorAll('.love-up');
@@ -135,7 +174,7 @@ function btnAmei() {
     })
   }
 }
-/// menu efeito
+/// menu efeito  -----------------------------------------------------------
 
 const imghome = document.querySelector('[data-homeImg]');
 const home = document.querySelector('[data-home]');
@@ -150,14 +189,4 @@ imghome.onmouseover = () => {
   home.style.opacity = `0.72`;
 }
 
-function selecionarProjeto() { 
-  const projetos = document.querySelectorAll('.titulo-projeto');
-  for(let i = 0; i < projetos.length; i++) {
-    projetos[i].onclick = () => {
-     // window.location.href = "index.html";      
-      
 
-    
-    }
-  }
-}
