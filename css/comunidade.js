@@ -192,9 +192,9 @@ imghome.onmouseover = () => {
 }
 
 function aumenta () {
-  imgcomu.style.width = `50px`;
-  imgcomu.style.height = `50px`;
-  comu.style.fontSize = `1.05rem`;
+  imgcomu.style.width = `49px`;
+  imgcomu.style.height = `49px`;
+  comu.style.fontSize = `1.01rem`;
 }
 function diminui (){
 	imgcomu.style.width = `48px`;
