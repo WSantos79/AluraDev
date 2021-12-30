@@ -72,7 +72,7 @@ function newCode() {
     
       // substituindo caracteres do codigo para o navegador nao interpretar o HTML 
       let newCode = dado.codigo.replace(/</g, "&lt;");
-      newCode = newCode.replace(/>/g, "&gt;;");
+      newCode = newCode.replace(/>/g, "&gt;");
 
       // Criar o item da lista
       let filho = document.createElement('div');
