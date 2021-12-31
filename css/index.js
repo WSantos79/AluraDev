@@ -238,12 +238,10 @@ tipoIMG.onclick = () => {
       link.href = dataUrl;
       link.click();*/
 
-      let a = document.createElement('a')
-      a.href = dataUrl
-      a.download = dataUrl.split('/').pop()
-      document.body.appendChild(a)
-      a.click()
-      document.body.removeChild(a)
+      let link = document.createElement('a');
+      link.setAttribute('download', 'meu-codigo.png');
+      link.href = dataUrl;
+      link.click();
 
     })
     .catch(function (error) {
@@ -277,6 +275,15 @@ tipoIMG.onclick = () => {
   } 
 }
 // ------------------ botao copiar o codigo ------------------------------------------------------------------
+
+document.querySelector('.copy-icon').onclick = () => {
+  let textoCopiado = document.getElementById("codigo").textContent;
+  textoCopiado.select();
+  textoCopiado.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("O texto é: " + textoCopiado.value);
+}
+
 /*
 
 function copiarTexto() {
