@@ -255,7 +255,7 @@ tipoIMG.onclick = () => {
 
   
   else{
-    domtoimage.toJpeg(print, { quality: 0.95 })
+    domtoimage.toJpeg(print, {filter: filter}, { quality: 0.95 })
     .then(function (dataUrl) {
         var link = document.createElement('a');
         link.download = 'meu-codigo.jpeg';
