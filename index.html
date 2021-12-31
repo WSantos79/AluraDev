@@ -64,7 +64,7 @@
                 <div class="code" data-code>
                     <div class="code_editor">                        
                         <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">
-                        <button ><img class="copy-icon" src="img/copy-icon.png" alt="Icone Copiar Código"></button>
+                        <a><img class="copy-icon" src="img/copy-icon.png" alt="Icone Copiar Código"></a>
                         <button class="export" data-export>Exportar</button>
                         <select id="tipoImg">
                             <option value="PNG">PNG</option>
@@ -72,7 +72,7 @@
                             <option value="JPG">JPG</option>
                         </select>
                         <div class="my-code">
-                            <code class="hljs JavaScript language-JavaScript" id="codigo" contenteditable="true" autocapitalize="none" aria-autocomplete="none" spellcheck="false" role="presentation"> <!-- const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                            <code class="hljs JavaScript language-JavaScript" id="codigo" contenteditable="true" autocapitalize="none" aria-autocomplete="none" spellcheck="false" role="presentation">const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
                                 <br>const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
                                 <br>const unfold = (f, seed) => {
        const go = (f, seed, acc) => {
@@ -80,15 +80,13 @@
           return res ? go(f, res[1], acc.concat([res[0]])) : acc
        }
        return go(f, seed, [])
-    }
-                             --></code>    
+    }</code>    
                         </div>
     
                     </div>                    
                 </div>
                 <input class="btn" type="button" value="Visualizar com o highlight">
             </section>
-
             <section class="sobre-projeto">
                 <ul>
                     <li class="titulo-menu">Seu projeto</li>

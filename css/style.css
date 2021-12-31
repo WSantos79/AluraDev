@@ -150,6 +150,7 @@ main .container {
   margin-top: 1rem;
 }
 .copy-icon {
+  display: none;
   position: absolute;
   width: 25px;
   height: 25px;

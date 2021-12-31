@@ -223,7 +223,7 @@ function editar (){
   const tipoIMG = document.querySelector('[data-export]')
 
   function filter (node) {
-    return (node.tagName !== 'BUTTON' && node.tagName !== 'SELECT');
+    return (node.tagName !== 'BUTTON' && node.tagName !== 'SELECT' && node.tagName !== 'A');
 }   
   
 tipoIMG.onclick = () => {
@@ -275,24 +275,28 @@ tipoIMG.onclick = () => {
   } 
 }
 // ------------------ botao copiar o codigo ------------------------------------------------------------------
-
+/*
 document.querySelector('.copy-icon').onclick = () => {
-  let textoCopiado = document.getElementById("codigo").textContent;
-  textoCopiado.select();
-  textoCopiado.setSelectionRange(0, 99999)
+  
+  var copyGfGText = document.getElementById("codigo").textContent;
+  
+  
+  //copyGfGText.textContent;
+  
+  
   document.execCommand("copy");
-  alert("O texto é: " + textoCopiado.value);
+  
+   Alert the copied text 
+  alert("Copied the text: " + copyGfGText.value);
 }
 
-/*
 
-function copiarTexto() {
-        let textoCopiado = document.getElementById("texto");
-        textoCopiado.select();
-        textoCopiado.setSelectionRange(0, 99999)
-        document.execCommand("copy");
-        alert("O texto é: " + textoCopiado.value);
-}*/
+
+
+  */
+
+
+
 
 
 /*  -------------------- TAB dentro do text area ------------------------------  
