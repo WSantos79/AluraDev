@@ -232,12 +232,19 @@ tipoIMG.onclick = () => {
 
   if(extencao == "PNG") {  
     domtoimage.toPng(print, {filter: filter})
-    .then(function (dataUrl) {
-      var link = document.createElement('a');
+    .then(function (dataUrl) {    
+     /* var link = document.createElement('a');
       link.download = 'meu-codigo.png';
       link.href = dataUrl;
-      link.click();
-      window.URL.revokeObjectURL(link.href);
+      link.click();*/
+
+      let a = document.createElement('a')
+      a.href = dataUrl
+      a.download = dataUrl.split('/').pop()
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+
     })
     .catch(function (error) {
         console.error('oops, algo deu errado!', error);
@@ -251,18 +258,22 @@ tipoIMG.onclick = () => {
       link.download = 'meu-codigo.svg';
       link.href = dataUrl;
       link.click();
-    });
-  }
+    })
+    .catch(function (error) {
+      console.error('oops, algo deu errado!', error);
+  });
 
-  
-  else{
+  }else{
     domtoimage.toJpeg(print, {filter: filter}, { quality: 0.95 })
     .then(function (dataUrl) {
         var link = document.createElement('a');
         link.download = 'meu-codigo.jpeg';
         link.href = dataUrl;
         link.click();
-    });
+    })
+    .catch(function (error) {
+      console.error('oops, algo deu errado!', error);
+  });
   } 
 }
 // ------------------ botao copiar o codigo ------------------------------------------------------------------
