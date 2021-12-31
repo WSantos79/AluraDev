@@ -220,13 +220,13 @@ function editar (){
 }
 
 // exportar imagem do codigo  -------------------------------------------------------------------------------------------
-  const tipoIMG = document.querySelector('[data-export]')
+  
 
-  function filter (node) {
-    return (node.tagName !== 'BUTTON' && node.tagName !== 'SELECT' && node.tagName !== 'A');
+function filter (node) {
+  return (node.tagName !== 'BUTTON' && node.tagName !== 'SELECT' && node.tagName !== 'A');
 }   
   
-tipoIMG.onclick = () => {
+document.querySelector('[data-export]').onclick = () => {
   const extencao = document.getElementById('tipoImg').value;
   const print = document.querySelector('[data-code]'); 
   const link = document.querySelector('[data-down]');
@@ -234,16 +234,9 @@ tipoIMG.onclick = () => {
   if(extencao == "PNG") {  
     domtoimage.toPng(print, {filter: filter})
     .then(function (dataUrl) {    
-     /* let link = document.createElement('a');
-      link.setAttribute('download', 'meu-codigo.png');
-      link.href = dataUrl;
-      link.click();*/
-
       link.setAttribute('download', 'meu-codigo.png');
       link.href = dataUrl;
       link.click();
-
-      
 
     })
     .catch(function (error) {
@@ -254,8 +247,7 @@ tipoIMG.onclick = () => {
   }else if(extencao == "SVG"){    
     domtoimage.toSvg(print, {filter: filter})
     .then(function (dataUrl) {
-      var link = document.createElement('a');
-      link.download = 'meu-codigo.svg';
+      link.setAttribute('download', 'meu-codigo.svg');
       link.href = dataUrl;
       link.click();
     })
@@ -266,10 +258,9 @@ tipoIMG.onclick = () => {
   }else{
     domtoimage.toJpeg(print, {filter: filter}, { quality: 0.95 })
     .then(function (dataUrl) {
-        var link = document.createElement('a');
-        link.download = 'meu-codigo.jpeg';
-        link.href = dataUrl;
-        link.click();
+      link.setAttribute('download', 'meu-codigo.jpeg ');
+      link.href = dataUrl;
+      link.click();
     })
     .catch(function (error) {
       console.error('oops, algo deu errado!', error);
