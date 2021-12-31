@@ -268,25 +268,37 @@ document.querySelector('[data-export]').onclick = () => {
   } 
 }
 // ------------------ botao copiar o codigo ------------------------------------------------------------------
-/*
+
 document.querySelector('.copy-icon').onclick = () => {
-  
-  var copyGfGText = document.getElementById("codigo").textContent;
-  
-  
-  //copyGfGText.textContent;
-  
-  
-  document.execCommand("copy");
-  
-   Alert the copied text 
-  alert("Copied the text: " + copyGfGText.value);
+ 
+  //O texto que será copiado
+  const texto = document.getElementById('codigo').textContent;
+
+  //Cria um elemento input (pode ser um textarea)
+  let inputTest = document.createElement("input");
+  inputTest.value = texto;
+  //Anexa o elemento ao body
+  document.body.appendChild(inputTest);
+  //seleciona todo o texto do elemento
+  inputTest.select();
+  //executa o comando copy
+  //aqui é feito o ato de copiar para a area de trabalho com base na seleção
+  document.execCommand('copy');
+  //remove o elemento
+  document.body.removeChild(inputTest);
+
+  let alert = document.querySelector('[data-alert]');
+  alert.style.display = 'block';
+    
+  window.setTimeout('noAlerta()', 1000);  
+}
+
+function noAlerta() {
+  let alert = document.querySelector('[data-alert]');
+  alert.style.display = 'none';
 }
 
 
-
-
-  */
 
 
 

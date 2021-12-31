@@ -150,7 +150,6 @@ main .container {
   margin-top: 1rem;
 }
 .copy-icon {
-  display: none;
   position: absolute;
   width: 25px;
   height: 25px;
@@ -162,6 +161,20 @@ main .container {
   padding: 2px;
   border: 1px solid rgb(145, 144, 144);
   border-radius: 5px;
+}
+.alert {
+  position: absolute;
+  right: 120px;
+  top: 30px;
+
+  color: rgb(0, 0, 0);
+  background: white;
+  padding: 4px;
+  border-radius: 8px;
+  font-family: none;
+  font-weight: 1;
+  display: none;
+  z-index: 2;
 }
 .export {
   position: absolute;

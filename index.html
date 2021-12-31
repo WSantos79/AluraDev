@@ -65,6 +65,7 @@
                     <div class="code_editor">                        
                         <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">
                         <a><img class="copy-icon" src="img/copy-icon.png" alt="Icone Copiar Código"></a>
+                        <span data-alert class="alert">Código copiado</span>
                         <button class="export" data-export>Exportar</button>
                         <select id="tipoImg">
                             <option value="PNG">PNG</option>
@@ -92,10 +93,10 @@
                     <li class="titulo-menu">Seu projeto</li>
                     <form class="meu-projeto" action="./">
                         <li>                        
-                            <input class="projeto" type="text" placeholder="Nome do seu projeto" data-nomeProjeto maxlength="25" spellcheck="false" >
+                            <input class="projeto" type="text" placeholder="Nome do seu projeto" data-nomeProjeto maxlength="25" spellcheck="false" required>
                         </li>
                         <li>                            
-                            <textarea class="projeto" id="descricao-projeto" type="text" placeholder="Descrição do seu projeto" maxlength="50" wrap="hard" spellcheck="false"></textarea>                                             
+                            <textarea class="projeto" id="descricao-projeto" type="text" placeholder="Descrição do seu projeto" maxlength="50" wrap="hard" spellcheck="false" required></textarea>                                             
                         </li>
                     </form>
                     <li class="titulo-menu">Personalização</li>
