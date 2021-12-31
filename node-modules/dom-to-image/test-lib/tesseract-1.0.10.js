@@ -492,7 +492,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var adapter = require('../node/index.js');
+var adapter = require('../node/index.js.js');
 
 var jobCounter = 0;
 
@@ -603,8 +603,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var adapter = require('./node/index.js');
-var circularize = require('./common/circularize.js');
+var adapter = require('./node/index.js.js');
+var circularize = require('./common/circularize.js.js');
 var TesseractJob = require('./common/job');
 var objectAssign = require('object-assign');
 var version = require('../package.json').version;
