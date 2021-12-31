@@ -237,6 +237,7 @@ tipoIMG.onclick = () => {
       link.download = 'meu-codigo.png';
       link.href = dataUrl;
       link.click();
+      window.URL.revokeObjectURL(link.href);
     })
     .catch(function (error) {
         console.error('oops, algo deu errado!', error);
