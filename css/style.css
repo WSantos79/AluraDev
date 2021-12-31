@@ -149,10 +149,23 @@ main .container {
   margin-left: 1rem;
   margin-top: 1rem;
 }
+.copy-icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  top: 5px;
+  right: 160px;
+
+  cursor: pointer;
+  padding: 2px;
+  border: 1px solid rgb(145, 144, 144);
+  border-radius: 5px;
+}
 .export {
   position: absolute;
   right: 70px;
-  top: 11px;
+  top: 9px;
   
   background: rgba(20, 20, 20, 1);
   color: rgb(145, 144, 144);
@@ -176,7 +189,7 @@ main .container {
   cursor: pointer;
   position: absolute;
   right: 15px;
-  top: 11px;
+  top: 9px;
 
   background: rgba(20, 20, 20, 1);  
   color: rgb(145, 144, 144);
