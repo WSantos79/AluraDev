@@ -229,19 +229,21 @@ function editar (){
 tipoIMG.onclick = () => {
   const extencao = document.getElementById('tipoImg').value;
   const print = document.querySelector('[data-code]'); 
+  const link = document.querySelector('[data-down]');
 
   if(extencao == "PNG") {  
     domtoimage.toPng(print, {filter: filter})
     .then(function (dataUrl) {    
-     /* var link = document.createElement('a');
-      link.download = 'meu-codigo.png';
+     /* let link = document.createElement('a');
+      link.setAttribute('download', 'meu-codigo.png');
       link.href = dataUrl;
       link.click();*/
 
-      let link = document.createElement('a');
       link.setAttribute('download', 'meu-codigo.png');
       link.href = dataUrl;
       link.click();
+
+      
 
     })
     .catch(function (error) {
