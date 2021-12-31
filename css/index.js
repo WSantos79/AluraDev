@@ -233,10 +233,10 @@ tipoIMG.onclick = () => {
   if(extencao == "PNG") {  
     domtoimage.toPng(print, {filter: filter})
     .then(function (dataUrl) {
-        var link = document.createElement('a');
-        link.download = 'meu-codigo.jpeg';
-        link.href = dataUrl;
-        link.click();
+      var link = document.createElement('a');
+      link.download = 'meu-codigo.png';
+      link.href = dataUrl;
+      link.click();
     })
     .catch(function (error) {
         console.error('oops, algo deu errado!', error);
@@ -247,7 +247,7 @@ tipoIMG.onclick = () => {
     domtoimage.toSvg(print, {filter: filter})
     .then(function (dataUrl) {
       var link = document.createElement('a');
-      link.download = 'meu-codigo.jpeg';
+      link.download = 'meu-codigo.svg';
       link.href = dataUrl;
       link.click();
     });
@@ -264,6 +264,17 @@ tipoIMG.onclick = () => {
     });
   } 
 }
+// ------------------ botao copiar o codigo ------------------------------------------------------------------
+/*
+
+function copiarTexto() {
+        let textoCopiado = document.getElementById("texto");
+        textoCopiado.select();
+        textoCopiado.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        alert("O texto é: " + textoCopiado.value);
+}*/
+
 
 /*  -------------------- TAB dentro do text area ------------------------------  
 document.getElementById('codigo').addEventListener('keydown', function (e) {
