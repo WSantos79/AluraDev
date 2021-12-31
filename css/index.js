@@ -219,6 +219,51 @@ function editar (){
   }
 }
 
+// exportar imagem do codigo  -------------------------------------------------------------------------------------------
+  const tipoIMG = document.querySelector('[data-export]')
+
+  function filter (node) {
+    return (node.tagName !== 'BUTTON' && node.tagName !== 'SELECT');
+}   
+  
+tipoIMG.onclick = () => {
+  const extencao = document.getElementById('tipoImg').value;
+  const print = document.querySelector('[data-code]'); 
+
+  if(extencao == "PNG") {  
+    domtoimage.toPng(print, {filter: filter})
+    .then(function (dataUrl) {
+        var link = document.createElement('a');
+        link.download = 'meu-codigo.jpeg';
+        link.href = dataUrl;
+        link.click();
+    })
+    .catch(function (error) {
+        console.error('oops, algo deu errado!', error);
+    }); 
+    
+    
+  }else if(extencao == "SVG"){    
+    domtoimage.toSvg(print, {filter: filter})
+    .then(function (dataUrl) {
+      var link = document.createElement('a');
+      link.download = 'meu-codigo.jpeg';
+      link.href = dataUrl;
+      link.click();
+    });
+  }
+
+  
+  else{
+    domtoimage.toJpeg(print, { quality: 0.95 })
+    .then(function (dataUrl) {
+        var link = document.createElement('a');
+        link.download = 'meu-codigo.jpeg';
+        link.href = dataUrl;
+        link.click();
+    });
+  } 
+}
 
 /*  -------------------- TAB dentro do text area ------------------------------  
 document.getElementById('codigo').addEventListener('keydown', function (e) {

@@ -143,10 +143,44 @@ main .container {
   height: 100%; /* 18.8rem */
   box-shadow: 0px 1rem 24px rgba(0, 0, 0, 0.24);
   border-radius: 8px;  
+  position: relative
 }
 .ellipse {
   margin-left: 1rem;
   margin-top: 1rem;
+}
+.export {
+  position: absolute;
+  right: 70px;
+  top: 11px;
+  
+  background: rgba(20, 20, 20, 1);
+  color: rgb(145, 144, 144);
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+  border: 1px solid;  
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  
+}
+#tipoImg{  
+  border-right: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: none;  
+  border-end-end-radius: 4px;  
+  border-top-right-radius: 4px; 
+  padding: 3px 0;
+
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 11px;
+
+  background: rgba(20, 20, 20, 1);  
+  color: rgb(145, 144, 144);
+  font-family: "Inter", sans-serif;
 }
 .my-code {
   height: 76%;

@@ -65,7 +65,12 @@
                 <div class="code" data-code>
                     <div class="code_editor">                        
                         <img class="ellipse" src="img/mac_buttons.svg" alt="botao mac">
-                        
+                        <button name="nops" class="export" data-export>Exportar</button>
+                        <select name="nops" id="tipoImg">
+                            <option value="PNG">PNG</option>
+                            <option value="SVG">SVG</option>
+                            <option value="JPG">JPG</option>
+                        </select>
                         <div class="my-code">
                             <code class="hljs JavaScript language-JavaScript" id="codigo" contenteditable="true" autocapitalize="none" aria-autocomplete="none" spellcheck="false" role="presentation"> <!-- const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
                                 <br>const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
@@ -127,6 +132,7 @@
     <script src="css/index.js"></script>
     <script src="css/base.js"></script>
     
+    <script src="/node_modules/dom-to-image/src/dom-to-image.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
 </body>
 </html>
