@@ -63,17 +63,17 @@ btnSalvar.onclick = (eventoSalvar) => {
   const bordaCod2 = document.querySelector('.code_editor');
 
   if(nome.value.length < 4) {
-    nome.focus();
-    nome.style.border = `solid 1px red`;
+    nome.focus(); 
+    nome.style.border = `solid 1.5px red`;
   }else if(descricao.value.length < 4 ){
     descricao.focus();
-    descricao.style.border = `solid 1px red`;
+    descricao.style.border = `solid 1.5px red`;
     nome.style.border = `none`;
   }else if(codigo.innerText.length < 8){     
      codigo.focus();
-     bordaCod2.style.border = `solid 1px red`
-     code.style.border = `solid 1px red`;
-     descricao.style.border = `none`;    
+     bordaCod2.style.border = `solid 1.5px red`
+     code.style.border = `solid 1.5px red`;
+     descricao.style.border = `none`;   
   }else{
     descricao.style.border = `none`;
     bordaCod2.style.border = `none`;
@@ -297,26 +297,17 @@ function noAlerta() {
   let alert = document.querySelector('[data-alert]');
   alert.style.display = 'none';
 }
-
-
-
-
-
-
-
-/*  -------------------- TAB dentro do text area ------------------------------  
+  /*/-------------------- TAB dentro do code ------------------------------  
 document.getElementById('codigo').addEventListener('keydown', function (e) {
   if (e.keyCode === 9) { // TAB
     
-    var posAnterior = this.selectionStart;
-    var posPosterior = this.selectionEnd;
+    let start = this.selectionStart;
+    let end = this.selectionEnd;    
 
-    e.target.value = e.target.value.substring(0, posAnterior)
-      + '\t'
-      + e.target.value.substring(posPosterior);
+    e.target.textContent = e.target.textContent.substring(0, start) + '\t' + e.target.textContent.substring(end);
 
-    this.selectionStart = posAnterior + 1;
-    this.selectionEnd = posAnterior + 1;
+    this.selectionStart = start + 1;
+    this.selectionEnd = start + 1;
 
     // não move pro próximo elemento
     e.preventDefault();
