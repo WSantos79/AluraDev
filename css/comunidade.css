@@ -5,6 +5,9 @@ main .container {
 .menu-principal {  
     width: 20vw;
 }
+.divProfile {
+    width: 11rem;
+}
 .no-opacity,
 #no-opacity {
   opacity: 1;
@@ -81,10 +84,31 @@ main .container {
 }
 .ups-ordem {
     display: flex;  
+    align-items: center;
     margin-left: 1rem;     
 }
 .love-up-efeito {
     margin: 0 0 0 1.1vw;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.coment-up-efeito {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.div-trash {
+    position: absolute;
+    margin: 0 0 0 10rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 2px;    
+}
+.trash-icon {
+    width: 22px;
+    height: 22px;    
 }
 .love-up,
 .coment-up {
@@ -92,7 +116,8 @@ main .container {
     color: #FFFFFF;
 }
 .coment-up-efeito:hover,
-.love-up-efeito:hover {
+.love-up-efeito:hover,
+.div-trash:hover {
     background: rgba(255, 255, 255, 0.08);
     border-radius: 16px;
     cursor: pointer;
@@ -104,7 +129,10 @@ main .container {
 .cod-profile {
     display: flex;
     position: relative;
-  margin-top: 0.1vw;
+    margin-top: 0.5vw;
+}
+.divLogo {
+    width: 9rem;
 }
 .name-user{   
     margin: 0 1vw 0 0.5vw;

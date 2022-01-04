@@ -83,6 +83,10 @@
      margin: 0 0 0 0.6rem;
      color: #FFFFFF;
  }
+ .div-trash {
+    position: absolute;
+    margin: 0 0 0.3rem 9rem; 
+ }
  .coment-up-efeito:hover,
  .love-up-efeito:hover {
      background: rgba(255, 255, 255, 0.08);
@@ -96,7 +100,7 @@
  .cod-profile {
      display: flex;
      position: relative;
-     margin-top: 0.1vw;
+     margin-top: 1.15vw;
  }
  .name-user{   
      margin: 0 1rem 0 0.5rem;
@@ -121,7 +125,8 @@
     z-index: 2;
     position: absolute;
     top: 21rem;
-    right: 48%;
+    right: 2.5rem;
+    width: 50%;
 }
 .profile span {
     position: absolute;

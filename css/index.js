@@ -177,9 +177,89 @@ function editar (){
         // substituindo caracteres do codigo para o navegador nao interpretar o HTML
         let newCode = dado.codigo.replace(/</g, "&lt;");
         newCode = newCode.replace(/>/g, "&gt;");
-        
-        code.innerHTML = newCode;
 
+        // atribuindo ID chave para achar               
+        let chave = (`${atual.value.id}`);
+
+        // trocando o botao salvar para atualizar 
+        btn = document.querySelector('.input-salvar');
+        btnCancel = document.querySelector('[data-cancel]');
+        btnCancel.style.display = `block`;
+        btn.value = `Atualizar Projeto`;
+        
+        btnCancel.onclick = () => {
+          
+          // limpando os inputs
+          name.value = '';
+          desc.value = '';
+          linguagem.value = 'JavaScript';
+          pickColor.value = '#6BD1FF';
+          code.innerText = '';
+          codeCor.style.background = `#6BD1FF`;
+          
+          btn.value = `Salvar Projeto`;
+          btnCancel.style.display = `none`;
+          // recarrega a pagina
+          window.location.reload();
+        }
+
+        btn.onclick = (e) => {   
+            e.preventDefault();
+
+            //Abrindo a transação com a object store "codigos"
+            let transaction = connection.transaction(['codigos'], 'readwrite');
+            //Recuperando a object store para alterar o registro
+            let store = transaction.objectStore('codigos');              
+            //Recuperando um contato pela chave primaria
+            var request = store.get(parseInt(chave));
+
+            //quando ocorrer um erro ao buscar o registro
+            request.onerror = function (event) {
+              console.log('Ocorreu um erro ao buscar o registro.');
+            };
+
+            //quando o registro for encontrado com sucesso
+            request.onsuccess = function (event) {
+              var registro = event.target.result;
+              registro.nome = `${name.value}`;
+              registro.descricao = `${desc.value}`;
+              registro.linguagem = `${linguagem.value}`;
+              registro.cor = `${pickColor.value}`;
+              registro.codigo = `${code.innerHTML}`;      
+              event.target.key = (parseInt(chave));
+              
+              // por isso é preciso deletar o velho 
+              store.delete(parseInt(chave));
+
+              //Atualizando o registro no banco nao funciona, ele esta adcionando um novo 
+              var requestUpdate = store.add(registro);              
+
+              //quando ocorrer erro ao atualizar o registro
+              requestUpdate.onerror = function (event) {
+                  console.log('Ocorreu um erro ao salvar o registro.');
+              };
+
+              //quando o registro for atualizado com sucesso
+              requestUpdate.onsuccess = function (event) {
+                  alert('Projeto Atualizado com sucesso.');
+
+                  // limpando os inputs
+                  name.value = '';
+                  desc.value = '';
+                  linguagem.value = 'JavaScript';
+                  pickColor.value = '#6BD1FF';
+                  code.innerText = '';
+                  codeCor.style.background = `#6BD1FF`;
+                  
+                  btn.value = `Salvar Projeto`;
+                  btnCancel.style.display = `none`;
+              };
+            };
+          }
+
+
+        code.innerHTML = newCode;
+        
         const name = document.querySelector("[data-nomeProjeto]");
         name.value = dado.nome;
 
@@ -199,15 +279,14 @@ function editar (){
           ling = 4;
         }
         const linguagem = document.querySelector('.input-linguagem');
-        linguagem.selectedIndex = ling;
-
-      
-
-        // cor nao ta funcionando do picker
-         
-        //const pickColor = document.querySelector('.rectangle-color');
-        //pickColor.value = ConvertRGBtoHex(dado.cor);             
-      
+        linguagem.selectedIndex = ling;      
+        
+        // cor  do pick      
+        const pickColor = document.querySelector('.rectangle-color');       
+        console.log(`aqui o ${dado.cor}`);
+        pickColor.value = (`${dado.cor}`);             
+        
+        // cor do code
         const colorCode = document.querySelector('[data-code]');
         colorCode.style.background = dado.cor;        
        
@@ -218,7 +297,6 @@ function editar (){
     }
   }
 }
-
 // exportar imagem do codigo  -------------------------------------------------------------------------------------------
   
 

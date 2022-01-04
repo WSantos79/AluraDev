@@ -17,32 +17,35 @@ openRequest.onerror = (e) => { /* Algum erro */
   console.log(e.target.error);
 };
 // quando clica em um projeto para edita-lo
-function selecionarProjeto() { 
+function selecionarProjeto() {   
   const projetos = document.querySelectorAll('.titulo-projeto');
+
   for(let i = 0; i < projetos.length; i++) {
     projetos[i].onclick = () => {
 
-      let esteCodigo = projetos[i].parentNode.previousSibling.previousSibling;
-      let linguagem = projetos[i].parentNode.previousSibling.previousSibling.firstChild.nextSibling.firstChild.nextSibling.nextSibling.nextSibling.firstChild.nextSibling.classList.value;
-      // retirando a classe que precisa
-      let lingua = linguagem.split(' ');
-
-      let descricao = projetos[i].nextSibling.nextSibling;
-      let nome = projetos[i];
-      let cor = projetos[i].parentNode.previousSibling.previousSibling.style.backgroundColor;
-     
-      const novoDado = {id: `1`, nome: `${nome.innerText}`, descricao: `${descricao.innerText}`, linguagem: `${lingua[1]}`, cor: `${cor}`, codigo: `${esteCodigo.innerText}`};  
-
       let transaction = connection.transaction(['codigos'], 'readwrite');
-
       let store = transaction.objectStore('codigos');
-    
-      let request = store.add(novoDado);
-    
-    request.onsuccess = (e) => {
-      //alert(`\n \n Projeto salvo para editar na home \n`);
-    }      
-    }  
+
+      let chave = projetos[i].parentNode.nextElementSibling.firstElementChild.lastElementChild.firstElementChild.textContent;
+           
+      let cursor = store.openCursor();
+
+      cursor.onsuccess = (e) => {
+      
+        let atual = e.target.result;
+        
+        if (atual) {
+          if(atual.key == chave){
+                        
+            const novoDado = {id: `${atual.key}`, nome: `${atual.value.nome}`, descricao: `${atual.value.descricao}`, linguagem: `${atual.value.linguagem}`, cor: `${atual.value.cor}`, codigo: `${atual.value.codigo}`};  
+
+            store.add(novoDado);            
+          }
+          atual.continue();
+        }
+      }
+      location.replace("index.html");
+    }                        
   }
 }
 
@@ -52,6 +55,10 @@ var ling = [];
 
 function newCode() {
 
+  /// renderizar lista, limpando a lista depois do delete
+  document.querySelector('.exibicao-projetos').innerHTML = '';
+
+  //   - -  - - - -
   let transaction = connection.transaction(['codigos'], 'readwrite');
 
   let store = transaction.objectStore('codigos');
@@ -68,7 +75,7 @@ function newCode() {
       // comentario, like e user
       let numeroDeComentario = 0;
       let numeroDeLikes = 0;
-      let nomeUsuario = '@Harry';     
+      let nomeUsuario = '@WellSan';     
     
       // substituindo caracteres do codigo para o navegador nao interpretar o HTML 
       let newCode = dado.codigo.replace(/</g, "&lt;");
@@ -88,7 +95,7 @@ function newCode() {
       </div>
 
       <ul class="dados-projeto">
-          <li class="titulo-projeto"><a class="linkProjeto" href="./">${dado.nome}</a></li>
+          <li class="titulo-projeto"><a class="linkProjeto" href="#">${dado.nome}</a></li>
           <li class="descricao-projeto">${dado.descricao}</li>    
       </ul>
       <ul class="dados-ordem">                  
@@ -101,7 +108,12 @@ function newCode() {
                     <div class="love-up-efeito">
                           <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
                           <span class="love-up">${numeroDeLikes}</span>  
-                    </div>                                 
+                    </div>     
+                    <div class="div-trash">
+                          <span class="key" hidden>${atual.key}</span>
+                          <img class="trash-icon" src="img/trash-icon.png" alt="icone para deletar">
+                    </div>  
+
                 </li>
                 <li>
                     <div class="cod-profile">
@@ -122,15 +134,17 @@ function newCode() {
 
       
     } else {
-      // add todos codigos recuperados com sucesso           
-      btnAmei();
+      // add todos codigos recuperados com sucesso          
       highlight();
       selecionarProjeto();
+      deletarProjeto();
+      btnAmei();
     }
   }
   cursor.onerror = (e) => {
     console.log(e.target.error.name);
   }
+  
 }
 // aplicando o high light ----------------------------------------------------------------------------------
 function highlight() {
@@ -201,5 +215,35 @@ function diminui (){
   imgcomu.style.height = `48px`;  
   comu.style.fontSize = `1rem`; 
 }
+// --------------------- deletar projeto ---------------------------------------
 
+function deletarProjeto() {   
+  
+  const trash = document.querySelectorAll('.div-trash');
+  
+  for(let i = 0; i < trash.length; i++) {
+    trash[i].onclick = () => {
 
+      let transaction = connection.transaction(['codigos'], 'readwrite');
+      let store = transaction.objectStore('codigos');
+
+      let chave = trash[i].firstElementChild.textContent;
+           
+      let cursor = store.openCursor();
+
+      cursor.onsuccess = (e) => {
+      
+        let atual = e.target.result;
+        
+        if (atual) {
+          if(atual.key == chave){
+            alert("Projeto deletado !!!")
+            atual.delete();
+            newCode();
+          }
+          atual.continue();
+        }
+      }
+    }                        
+  }
+}

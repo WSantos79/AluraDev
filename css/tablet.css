@@ -4,7 +4,6 @@
 }
 main .container {
     flex-direction: column;
-    
 }
 .menu-principal,
 .menu-principal
@@ -19,6 +18,9 @@ main .container {
 }
 .option-mobile {
     display: flex;
+}
+.divLogo {
+    width: 48%;
 }
 .input-busca {
     width: 50vw;
@@ -62,31 +64,14 @@ main .container {
     width: 92vw;
     margin-bottom: 1rem;
 }
+.btn-cancel {
+    width: 92vw;
+    margin-bottom: 1rem;
+}
 .menu-smart { 
     width: 34vw;
     height: 35rem; 
     top: 7.6rem;    
-}
-.menu-principal {
-    position: absolute;
-    right: 19%;
-    top: 9rem;  
-    white-space: nowrap;
-    z-index: 2;
-    flex-wrap: wrap;
-}
-.menu-item {
-    margin: 0;
-}
-.profile {
-    z-index: 2;
-    position: absolute;
-    top: 21rem;
-    right: 23vw;
-}
-.profile span {
-    position: absolute;
-    margin-top: 5px;
 }
 .linha {
     width: 27vw;
@@ -107,7 +92,8 @@ main .container {
     z-index: 2;
     position: absolute;
     top: 21rem;
-    right: 10rem;
+    left: 34.8rem;
+    width: 50%;
 }
 .profile span {
     position: absolute;

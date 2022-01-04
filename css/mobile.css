@@ -77,6 +77,10 @@ main .container {
     width: 100%;
     margin: 0 0 1rem 0;
 } 
+.btn-cancel {
+    width: 100%;
+    margin-bottom: 1rem;
+}
 .menu-principal {
     position: absolute;
     right: 50%;
@@ -88,11 +92,13 @@ main .container {
 .menu-item {
     margin: 0;
 } 
+
 .profile {
     z-index: 2;
     position: absolute;
     top: 21rem;
-    right: 45%;
+    right: 1.9rem;
+    width: 50%;
 }
 .profile span {
     position: absolute;
