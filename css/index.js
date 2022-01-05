@@ -309,9 +309,9 @@ document.querySelector('[data-export]').onclick = () => {
   const print = document.querySelector('[data-code]'); 
   const link = document.querySelector('[data-down]');
 
-  if(extencao == "PNG") {  
+  if(extencao == "PNG") {
     domtoimage.toPng(print, {filter: filter})
-    .then(function (dataUrl) {    
+    .then(function (dataUrl) {
       link.setAttribute('download', 'meu-codigo.png');
       link.href = dataUrl;
       link.click();
