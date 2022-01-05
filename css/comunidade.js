@@ -1,3 +1,15 @@
+const search = document.querySelector('.input-busca');
+
+// verificar se  tem uma busca em andamento da pag index
+function temBusca() { 
+
+const texto = window.sessionStorage.getItem('busca'); // recuperando item de busca se houver
+search.value = texto;
+busca();
+
+window.sessionStorage.removeItem('busca');
+
+}
 
 // Conectando ao indexedDB 
 var connection;
@@ -139,6 +151,7 @@ function newCode() {
       selecionarProjeto();
       deletarProjeto();
       btnAmei();
+      temBusca();
     }
   }
   cursor.onerror = (e) => {
@@ -246,4 +259,25 @@ function deletarProjeto() {
       }
     }                        
   }
+}
+//------------------------- busca -------------------------------------------
+
+search.addEventListener('input', busca);
+
+function busca() { 
+  const projeto = document.querySelectorAll('.lista-projeto');
+  const digitado = search.value.toLowerCase().trim();
+
+  
+  projeto.forEach(projeto => {
+    const nome = projeto.querySelector('.linkProjeto').textContent.toLocaleLowerCase();
+    const descricao = projeto.querySelector('.descricao-projeto').textContent.toLocaleLowerCase();
+    const linguagem = projeto.querySelector('.hljs').classList.value.toLocaleLowerCase();
+
+    if(nome.includes(digitado) || descricao.includes(digitado) || linguagem.includes(digitado)) {
+      projeto.style.display = 'flex';
+      return;
+    }
+    projeto.style.display = 'none';
+  })
 }

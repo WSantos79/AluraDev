@@ -375,7 +375,22 @@ function noAlerta() {
   let alert = document.querySelector('[data-alert]');
   alert.style.display = 'none';
 }
-  /*/-------------------- TAB dentro do code ------------------------------  
+//------------------------- busca ----------------------------
+const inputSearch = document.querySelector('.input-busca');
+
+inputSearch.addEventListener('keyup', (e) => {   
+  var key = e.which || e.keyCode;
+  if (key == 13) { // codigo da tecla enter    
+    if(inputSearch.value.length < 3) {
+      inputSearch.blur(); 
+      alert('Busque por uma palavra maior que 2 letras !')
+    }else {
+      window.sessionStorage.setItem('busca',`${inputSearch.value}`);
+      window.location.href='comunidade.html';
+  }}
+});
+
+  /*/--------------------- TAB dentro do code ------------------------------  
 document.getElementById('codigo').addEventListener('keydown', function (e) {
   if (e.keyCode === 9) { // TAB
     

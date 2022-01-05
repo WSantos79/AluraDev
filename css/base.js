@@ -54,6 +54,3 @@ const abriMenu = (evento) => {
 }
 
 menu.addEventListener('click', abriMenu);
-
-
-
