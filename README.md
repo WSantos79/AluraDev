@@ -18,7 +18,7 @@ https://wsantos79.github.io/AluraDev/
 
 Desafio de Front-End proposto pela Alura, com o intuito de aproximar os alunos do ambiente de trabalho, onde deve ser desenvolvido um projeto com base nos requisitos do trello e do figma.
 
-Este projeto foi pensado como uma ideia de desenvolvedores compartilharem trechos de seus códigos de maneira simples e bonita, podendo salvar em formato de imagem e também salvar na comunidade, copiar o código, editar e personalizar, trocando a cor do editor, e também a cor de palavras chaves de seu código.
+Este projeto foi pensado como uma ideia de desenvolvedores compartilharem trechos de seus códigos de maneira simples e bonita, podendo salvar na comunidade e no formato de imagem, copiar o código, editar e personalizar, trocando a cor do editor e das palavras chaves de seu código.
 
 <img src="https://user-images.githubusercontent.com/58752564/148684643-51cbed16-d617-42f6-a712-331d6e90f834.png"><br>
 
