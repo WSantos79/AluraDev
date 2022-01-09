@@ -389,22 +389,3 @@ inputSearch.addEventListener('keyup', (e) => {
       window.location.href='comunidade.html';
   }}
 });
-
-  /*/--------------------- TAB dentro do code ------------------------------  
-document.getElementById('codigo').addEventListener('keydown', function (e) {
-  if (e.keyCode === 9) { // TAB
-    
-    let start = this.selectionStart;
-    let end = this.selectionEnd;    
-
-    e.target.textContent = e.target.textContent.substring(0, start) + '\t' + e.target.textContent.substring(end);
-
-    this.selectionStart = start + 1;
-    this.selectionEnd = start + 1;
-
-    // não move pro próximo elemento
-    e.preventDefault();
-  }
-}, false); 
-
-*/
