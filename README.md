@@ -1,17 +1,23 @@
-## :star: Alura Challenge Front - 2021 
+## :star: AluraDev Challenge Front - 2021 
 #### Acesse: https://wsantos79.github.io/AluraDev/ 
 <br>
+<p align="center">
+ <a href="#heavy_check_mark-Descrição">Descrição</a> •
+ <a href="#🔨-Tecnologias">Tecnologias</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#contribuicao">Contribuição</a> • 
+ <a href="#licenc-a">Licença</a> • 
+ <a href="#autor">Autor</a>
+</p>
 
 <img src="https://user-images.githubusercontent.com/58752564/148684095-95991778-e810-4798-be20-b1ea94b69ae0.png"><br><br>
 
-### :dart: Desafio de Front-End proposto pela Alura.
 
-Desafio proposto com o intuito de aproximar os alunos do ambiente de trabalho, onde deve ser desenvolvido um projeto com base nos requisitos do trello e do figma.
+### :heavy_check_mark: **Descrição:**
 
+Desafio de Front-End proposto pela Alura, com o intuito de aproximar os alunos do ambiente de trabalho, onde deve ser desenvolvido um projeto com base nos requisitos do trello e do figma.
 
-### :heavy_check_mark: Sobre o projeto.
-
-Este projeto foi pensado como uma ideia de desenvolvedores compartilharem trechos de seus códigos de maneira simples e bonita, podendo salvar, copiar o código, editar e personalizar, trocando a cor do editor, e também a cor de palavras chaves de seu código.
+Este projeto foi pensado como uma ideia de desenvolvedores compartilharem trechos de seus códigos de maneira simples e bonita, podendo salvar em formato de imagem e também salvar na comunidade, copiar o código, editar e personalizar, trocando a cor do editor, e também a cor de palavras chaves de seu código.
 
 <img src="https://user-images.githubusercontent.com/58752564/148684643-51cbed16-d617-42f6-a712-331d6e90f834.png"><br>
 
@@ -19,7 +25,7 @@ O projeto não usa um banco de dados, mas os dados são salvos no navegador usan
 
 <img src="https://user-images.githubusercontent.com/58752564/148684356-00a456cc-a609-4ffb-8a37-1cb29a3b34b8.png"><br><br>
 
-### 🔨 Tecnologias utilizadas
+### 🔨 **Tecnologias**
 
 <ul type="none">
 <li>:small_blue_diamond: HTML</li>
