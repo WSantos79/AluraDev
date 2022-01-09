@@ -9,14 +9,14 @@ iconBusca.onclick = (evento) => {
   const logoAlura = document.querySelector('[data-logo-alura]');
   const input = document.querySelector('.input-busca');
   if (x == 0) {
-    iconBusca.setAttribute('src', 'img/close-icon.svg');
+    iconBusca.setAttribute('src', 'assets/img/close-icon.svg');
     iconBusca.style.margin = `0`;
     input.style.display = `block`;
     logoAlura.style.display = `none`;
     menu.style.display = `none`;
     x = 1;
   } else {
-    iconBusca.setAttribute('src', 'img/search-icon.svg');
+    iconBusca.setAttribute('src', 'assets/img/search-icon.svg');
     iconBusca.style.margin = `0 1rem`;
     input.style.display = `none`;
     logoAlura.style.display = `block`;
@@ -41,14 +41,14 @@ const abriMenu = (evento) => {
     menuTotal.style.display = `flex`;   
     barraMenu.style.display = `block`;
     usuario.style.display = `block`;
-    imgMenu.setAttribute('src', 'img/close-icon.svg');
+    imgMenu.setAttribute('src', 'assets/img/close-icon.svg');
     i = 1;
 
   } else {
     menuTotal.style.display = `none`;
     barraMenu.style.display = `none`;
     usuario.style.display = `none`;
-    imgMenu.setAttribute('src', 'img/menu-icon.svg');
+    imgMenu.setAttribute('src', 'assets/img/menu-icon.svg');
     i = 0;
   }
 }

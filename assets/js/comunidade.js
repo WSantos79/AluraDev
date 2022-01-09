@@ -99,7 +99,7 @@ function newCode() {
       const conteudo = `
       <div class="code" style="background: ${dado.cor};">    
           <div class="code_editor">                        
-                <img class="ellipse" src="img/mac_buttons.svg" alt="botão mac">                        
+                <img class="ellipse" src="assets/img/mac_buttons.svg" alt="botão mac">                        
                 <div class="my-code">
                     <code class="hljs" id="codigo" aria-autocomplete="none" spellcheck="false" role="presentation">${newCode}</code>                   
                 </div>   
@@ -113,23 +113,23 @@ function newCode() {
       <ul class="dados-ordem">                  
                 <li class="ups-ordem">   
                     <div class="coment-up-efeito">                   
-                        <img src="img/coment-icon.svg" alt="icone de comentario">
+                        <img src="assets/img/coment-icon.svg" alt="icone de comentario">
                         <span class="coment-up">${numeroDeComentario}</span>
                     </div>                        
 
                     <div class="love-up-efeito">
-                          <img class="love-icon" src="img/love-icon.svg" alt="icone de gostei">
+                          <img class="love-icon" src="assets/img/love-icon.svg" alt="icone de gostei">
                           <span class="love-up">${numeroDeLikes}</span>  
                     </div>     
                     <div class="div-trash">
                           <span class="key" hidden>${atual.key}</span>
-                          <img class="trash-icon" src="img/trash-icon.png" alt="icone para deletar">
+                          <img class="trash-icon" src="assets/img/trash-icon.png" alt="icone para deletar">
                     </div>  
 
                 </li>
                 <li>
                     <div class="cod-profile">
-                          <img class="img-user" src="img/Photo24x.svg" alt="foto do usuario">
+                          <img class="img-user" src="assets/img/Photo24x.svg" alt="foto do usuario">
                           <p class="name-user">${nomeUsuario}</p>
                     </div>
                 </li>               
@@ -190,12 +190,12 @@ function btnAmei() {
 
       if (testeIF == 1) {
         up[i].innerHTML = parseInt(up[i].innerHTML) - 1;
-        img[i].setAttribute('src', 'img/love-icon.svg');
+        img[i].setAttribute('src', 'assets/img/love-icon.svg');
         testeIF = 0;
 
       } else {
         up[i].innerHTML = parseInt(up[i].innerHTML) + 1;
-        img[i].setAttribute('src', 'img/love-icon-red.svg');
+        img[i].setAttribute('src', 'assets/img/love-icon-red.svg');
         testeIF = 1;
       }
     })
