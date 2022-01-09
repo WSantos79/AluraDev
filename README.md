@@ -1,6 +1,6 @@
 ## :star: AluraDev Challenge Front - 2021 
 
-### :eyes: Veja o projeto online !
+### :mag: Veja o projeto online !
 
 https://wsantos79.github.io/AluraDev/
 
@@ -14,7 +14,7 @@ https://wsantos79.github.io/AluraDev/
 <img src="https://user-images.githubusercontent.com/58752564/148684095-95991778-e810-4798-be20-b1ea94b69ae0.png"><br><br>
 
 
-### :heavy_check_mark: **Descrição:**
+### :heavy_check_mark: **Descrição**
 
 Desafio de Front-End proposto pela Alura, com o intuito de aproximar os alunos do ambiente de trabalho, onde deve ser desenvolvido um projeto com base nos requisitos do trello e do figma.
 
@@ -40,6 +40,11 @@ Para salvar os projetos na comunidade os dados são salvos no navegador usando o
 <li>:small_blue_diamond: Lib dom-to-image</li>
 </ul>
 
+### :scroll: Como usar
+
++ Primeiro, é necessário ter o node instalado.
++ Clone este repositório.
++ Execute `npm install` para instalar as dependências.
 
 ### :smiley: Autor
 
