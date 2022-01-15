@@ -71,16 +71,16 @@ function newCode() {
   document.querySelector('.exibicao-projetos').innerHTML = '';
 
   //   - -  - - - -
-  let transaction = connection.transaction(['codigos'], 'readwrite');
+  let transaction = connection.transaction(['codigos'], 'readonly');
 
   let store = transaction.objectStore('codigos');
 
   let cursor = store.openCursor();
-
+  
   cursor.onsuccess = (e) => {
 
     let atual = e.target.result;
-
+  
     if (atual) {
       let dado = atual.value;
 
@@ -88,7 +88,7 @@ function newCode() {
       let numeroDeComentario = 0;
       let numeroDeLikes = 0;
       let nomeUsuario = '@WellSan';     
-    
+
       // substituindo caracteres do codigo para o navegador nao interpretar o HTML 
       let newCode = dado.codigo.replace(/</g, "&lt;");
       newCode = newCode.replace(/>/g, "&gt;");
@@ -101,11 +101,10 @@ function newCode() {
           <div class="code_editor">                        
                 <img class="ellipse" src="assets/img/mac_buttons.svg" alt="botão mac">                        
                 <div class="my-code">
-                    <code class="hljs" id="codigo" aria-autocomplete="none" spellcheck="false" role="presentation">${newCode}</code>                   
+                      <code class="hljs" id="codigo" aria-autocomplete="none" spellcheck="false" role="presentation">${newCode}</code>                   
                 </div>   
           </div>                     
       </div>
-
       <ul class="dados-projeto">
           <li class="titulo-projeto"><a class="linkProjeto" href="#">${dado.nome}</a></li>
           <li class="descricao-projeto">${dado.descricao}</li>    
@@ -116,8 +115,7 @@ function newCode() {
                         <img src="assets/img/coment-icon.svg" alt="icone de comentario">
                         <span class="coment-up">${numeroDeComentario}</span>
                     </div>                        
-
-                    <div class="love-up-efeito">
+                   <div class="love-up-efeito">
                           <img class="love-icon" src="assets/img/love-icon.svg" alt="icone de gostei">
                           <span class="love-up">${numeroDeLikes}</span>  
                     </div>     
@@ -134,16 +132,15 @@ function newCode() {
                     </div>
                 </li>               
           </ul>`          
-
-      
+     
       filho.innerHTML = conteudo;
-      
+        
       document.querySelector('.exibicao-projetos').appendChild(filho);
 
       ling.push(`${dado.linguagem}`);
 
       atual.continue();
-
+    
       
     } else {
       // add todos codigos recuperados com sucesso          
