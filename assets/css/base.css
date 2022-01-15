@@ -1,0 +1,26 @@
+:root {
+    --branco: #FFFFFF;
+    --fundo: #051d3b;
+    --fundo-detalhes: rgba(255, 255, 255, 0.16);
+    --fundo-detalhes-hover: rgba(255, 255, 255, 0.24);
+    --fundo-profile-hover: rgba(255, 255, 255, 0.08);
+    --fundo-menu: rgba(80, 129, 251, 0.16);
+    --fundo-menu-hover: rgba(80, 129, 251, 0.64);
+    --fundo-menu-focus: rgba(80, 129, 251, 1);
+    --fundo-code-inicial: #6bd1ff;
+    --fundo-edt-code: rgba(20, 20, 20, 1);
+    --btn-highlight-fundo:  rgba(80, 129, 251, 0.08);
+    --btn-highlight-hover:  rgba(80, 129, 251, 0.16);
+    --btn-highlight-active: rgba(80, 129, 251, 0.16);
+    --btn-highlight-focus:  rgba(80, 129, 251, 0.24);
+    --menu-smart-fundo: #2D415B;
+    --texto-input: rgba(255, 255, 255, 1);
+    --texto-btn: #051d3b;
+    --input-linguagem-fundo: #3a4a5e;
+    --input-linguagem-hover: #465a72;
+    --botao-fundo: #5081fb;
+    --botao-hover: #7BA4FC;
+    --botao-active: #7BA4FC;
+    --botao-focus: #96B9FD;
+    
+  }

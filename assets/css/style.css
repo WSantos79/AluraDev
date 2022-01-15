@@ -1,5 +1,7 @@
+@import "base.css";
+
 body {
-  background: #051d3b;
+  background: var(--fundo);
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
@@ -25,18 +27,18 @@ body {
   width: 54vw;
   height: 3.5rem;
   padding: 0 14px;
-  background: rgba(255, 255, 255, 0.16);
+  background: var(--fundo-detalhes);
   border-radius: 8px;
   font-size: 1rem; /* 1rem = 16px */
   line-height: 24px;
   border: none;
-  color: rgba(255, 255, 255, 1);
-  caret-color: white;
+  color: var(--branco);
+  caret-color: var(--branco);
   opacity: 0.64;
   outline: none;  
 }
 .input-busca:hover{
-  background: rgba(255, 255, 255, 0.24);
+  background: var(--fundo-detalhes-hover);
 }
 .divProfile {
   width: 20%;
@@ -48,12 +50,12 @@ body {
   align-items: center;    
   font-size: 1rem;
   line-height: 24px;
-  color: #ffffff;
+  color: var(--branco);
   border-radius: 8px;
   padding: 0.5rem 1rem 0.5rem 0.5rem ;  
 }
 .profile:hover {
-  background: rgba(255, 255, 255, 0.08);;
+  background: var(--fundo-profile-hover);
 }
 .profile img {
   margin: 0 8px;
@@ -79,7 +81,7 @@ body {
 }
 
 .menu-item {
-  color: #ffffff;
+  color: var(--branco);
   font-size: 1rem;
   text-decoration: none;  
   line-height: 24px;  
@@ -97,7 +99,7 @@ body {
   opacity: 1;
 }
 .rectangle37 {
-  background: rgba(80, 129, 251, 0.16);
+  background: var(--fundo-menu);
   height: 48px;
   width: 48px;
   display: inline-block;
@@ -105,12 +107,12 @@ body {
   position: relative;
 }
 .rectangle37hover:hover {
-  background: rgba(80, 129, 251, 0.64);
+  background: var(--fundo-menu-hover);
   cursor: pointer;
   transition: 0.5s ease-in;
 }
 .rectangle37_focus {
-  background: rgba(80, 129, 251, 1);
+  background: var(--fundo-menu-focus);
 }
 .rectangle37_focus:hover{
   cursor: pointer;  
@@ -123,7 +125,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .titulo-menu {
-  color: #ffffff;
+  color: var(--branco);
   font-size: 12px;
   letter-spacing: 0.4em;
   text-transform: uppercase;
@@ -141,13 +143,13 @@ main .container {
   width: 54vw;  
 }
 .code {
-  background: #6bd1ff;
+  background: var(--fundo-code-inicial);
   border-radius: 8px;
   padding: 2rem;
   height: 18.8rem;
 }
 .code_editor {
-  background: rgba(20, 20, 20, 1);
+  background: var(--fundo-edt-code);
   width: 100%;
   height: 100%; /* 18.8rem */
   box-shadow: 0px 1rem 24px rgba(0, 0, 0, 0.24);
@@ -176,8 +178,8 @@ main .container {
   right: 120px;
   top: 30px;
 
-  color: rgb(0, 0, 0);
-  background: white;
+  color: black;
+  background: var(--branco);
   padding: 4px;
   border-radius: 8px;
   font-family: none;
@@ -190,7 +192,7 @@ main .container {
   right: 71px;
   top: 9px;
   
-  background: rgba(20, 20, 20, 1);
+  background: var(--fundo-edt-code);
   color: rgb(145, 144, 144);
   font-family: "Inter", sans-serif;
   font-size: 17px;
@@ -214,7 +216,7 @@ main .container {
   right: 15px;
   top: 9px;
 
-  background: rgba(20, 20, 20, 1);  
+  background: var(--fundo-edt-code);  
   color: rgb(145, 144, 144);
   font-family: "Inter", sans-serif;
 }
@@ -236,8 +238,8 @@ main .container {
   overflow-x: hidden;
   word-break: break-word;
   
-  background: rgba(20, 20, 20, 1);
-  color: #ffffff;
+  background: var(--fundo-edt-code);
+  color: var(--branco);
   font-size: 14px;
   line-height: 18px;
   font-family: "Roboto Mono", monospace;
@@ -246,30 +248,30 @@ main .container {
 .btn {
   width: 54vw;
   height: 56px;
-  background: rgba(80, 129, 251, 0.08);
+  background: var(--btn-highlight-fundo);
   border-radius: 8px;
   border: none;
   font-size: 1rem;
   line-height: 24px;
-  color: #ffffff;
+  color: var(--branco);
   margin: 2rem 0 0 0;
 }
 .btn:hover {
-  background: rgba(80, 129, 251, 0.16);
+  background: var(--btn-highlight-hover);
   cursor: pointer;
   animation-timing-function: ease-out;
   animation-duration: 300ms; 
 }
 .btn:active {
-  background: rgba(80, 129, 251, 0.16);
+  background: var(--btn-highlight-active);
   border: 4px solid rgba(80, 129, 251, 0.24);
 }
 .btn:focus {
-  background: rgba(80, 129, 251, 0.24);
+  background: var(--btn-highlight-focus);
 }
 .menu-smart {
   position: absolute;
-  background: #2D415B;
+  background: var(--menu-smart-fundo);
   border-radius: 8px;
   width: 69vw;
   height: 120vw;
@@ -279,7 +281,7 @@ main .container {
 }
 .linha {
   width: 55vw;
-  border: 1px solid #FFFFFF;
+  border: 1px solid var(--branco);
   opacity: 0.08;
   position: absolute;  
   top: 10rem;
@@ -290,7 +292,7 @@ main .container {
   width: 100%;
   height: 56px;
   background: none;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--branco);
   box-sizing: border-box;
   border-radius: 8px;
   margin: 1rem 0 2rem;
@@ -327,8 +329,8 @@ main .container {
   width: 16.7vw;
   height: 56px;
 
-  background: rgba(255, 255, 255, 0.16);
-  color: rgba(255, 255, 255, 1);
+  background: var(--fundo-detalhes);
+  color: var(--texto-input);
   border-radius: 8px;
 
   font-size: 1rem;
@@ -340,14 +342,14 @@ main .container {
 }
 .input-linguagem {
   width: 18.5vw;
-  background: #3a4a5e;
+  background: var(--input-linguagem-fundo);
   resize: none;
 }
 .input-linguagem:hover {
-  background: #465a72;
+  background: var(--input-linguagem-hover);
 }
 .projeto:hover {
-  background: rgba(255, 255, 255, 0.24);
+  background: var(--fundo-detalhes-hover);
 }
 #descricao-projeto {
   padding-top: 1rem;
@@ -365,8 +367,8 @@ main .container {
 }
 .input-salvar,
 .btn-cancel {
-  color: #051d3b;
-  background: #5081fb;
+  color: var(--texto-btn);
+  background: var(--botao-fundo);
   width: 18.5vw;
   height: 56px;
 
@@ -381,17 +383,17 @@ main .container {
 }
 .input-salvar:hover,
 .btn-cancel:hover {
-  background: #7BA4FC;
+  background: var(--botao-hover);
   cursor: pointer;
   animation-timing-function: ease-out;
   animation-duration: 300ms; 
 }
 .input-salvar:active,
 .btn-cancel:active {
-background: #7BA4FC;
+background: var(--botao-active);
 border: 4px solid rgba(80, 129, 251, 0.72);
 }
 .input-salvar:focus,
 .btn-cancel:focus {
-  background: #96B9FD;
+  background: var(--botao-focus);
 }
