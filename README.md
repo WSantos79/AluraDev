@@ -50,8 +50,8 @@ Para salvar os projetos na comunidade os dados são salvos no navegador usando o
 
 ## <a href="https://github.com/WSantos79">Wellington Santos 🚀</a>
 
-[![Linkedin Badge](https://img.shields.io/badge/-Wellington-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/wellingtonsantos79/)](https://www.linkedin.com/in/wellingtonsantos79/) 
-[![Gmail Badge](https://img.shields.io/badge/-wellingtonsantos7799@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:wellingtonsantos7799@gmail.com)](mailto:wellingtonsantos7799@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-WellingtonSantos79-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/wellingtonsantos79/)](https://www.linkedin.com/in/wellingtonsantos79/) 
+[![Gmail Badge](https://img.shields.io/badge/-WellingtonSantos7799@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:wellingtonsantos7799@gmail.com)](mailto:wellingtonsantos7799@gmail.com)
 
 
 
