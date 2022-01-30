@@ -9,7 +9,7 @@
  <a href="#heavy_check_mark-Descrição">Descrição</a> •
  <a href="#hammer-Tecnologias">Tecnologias</a> •
  <a href="#game_die-Rodando-localmente">Rodando projeto</a> •
- <a href="#trophy-Badge">Badge</a> •	
+ <a href="#🏅-Badge">Badge</a> •	
  <a href="#smiley-autor">Autor</a>
 </p>
 
