@@ -123,7 +123,6 @@ function newCode() {
                           <span class="key" hidden>${atual.key}</span>
                           <img class="trash-icon" src="assets/img/trash-icon.png" alt="icone para deletar">
                     </div>  
-
                 </li>
                 <li>
                     <div class="cod-profile">
