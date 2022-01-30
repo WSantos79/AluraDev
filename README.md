@@ -1,4 +1,4 @@
-## :star: AluraDev Challenge Front - 2021 
+## :star: AluraDev Challenge Front
 
 ### :mag: Veja o projeto online !
 
