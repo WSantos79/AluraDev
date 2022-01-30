@@ -45,7 +45,7 @@ Para salvar os projetos na comunidade os dados são salvos no navegador usando o
 + Clone este repositório.
 + Execute `npm install` para instalar as dependências.
 
-## :trophy: Badge
+## 🏅 Badge
            
 
 <table style="text-align: center;">
