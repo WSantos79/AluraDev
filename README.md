@@ -9,7 +9,7 @@
  <a href="#heavy_check_mark-Descrição">Descrição</a> •
  <a href="#hammer-Tecnologias">Tecnologias</a> •
  <a href="#game_die-Rodando-localmente">Rodando projeto</a> •
- <a href="#🏅-Badge">Badge</a> •	
+ <a href="#medal_sports-Badge">Badge</a> •	
  <a href="#smiley-autor">Autor</a>
 </p>
 
@@ -45,7 +45,7 @@ Para salvar os projetos na comunidade os dados são salvos no navegador usando o
 + Clone este repositório.
 + Execute `npm install` para instalar as dependências.
 
-## 🏅 Badge
+## :medal_sports: Badge
            
 
 <table style="text-align: center;">
