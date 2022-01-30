@@ -1,20 +1,22 @@
-## :star: AluraDev Challenge Front
+# :star: AluraDev Challenge FrontEnd
 
-### :mag: Veja o projeto online !
+## :mag: Veja o projeto online !
 
-https://wsantos79.github.io/AluraDev/
+:link: https://wsantos79.github.io/AluraDev/
 
 <br>
 <p align="center">
  <a href="#heavy_check_mark-Descrição">Descrição</a> •
  <a href="#hammer-Tecnologias">Tecnologias</a> •
+ <a href="#game_die-Rodando localmente">Rodando projeto</a> •
+ <a href="#trophy-Badge">Badge</a> •	
  <a href="#smiley-autor">Autor</a>
 </p>
 
 <img src="https://user-images.githubusercontent.com/58752564/148684095-95991778-e810-4798-be20-b1ea94b69ae0.png"><br><br>
 
 
-### :heavy_check_mark: **Descrição**
+## :heavy_check_mark: **Descrição**
 
 Desafio de Front-End proposto pela Alura, com o intuito de aproximar os alunos do ambiente de trabalho, onde deve ser desenvolvido um projeto com base nos requisitos do trello e do figma.
 
@@ -25,11 +27,8 @@ Este projeto foi pensado como uma ideia de desenvolvedores compartilharem trecho
 Para salvar os projetos na comunidade os dados são salvos no navegador usando o IndexedDB, e também conta com um sistema de curtida de cada projeto.
 
 <img src="https://user-images.githubusercontent.com/58752564/148684356-00a456cc-a609-4ffb-8a37-1cb29a3b34b8.png"><br><br>
-<h4 align="center"> 
-	🚧  Em construção...  🚧
-</h4>
 
-### :hammer: **Tecnologias**
+## :hammer: **Tecnologias**
 
 <ul type="none">
 <li>:small_blue_diamond: HTML</li>
@@ -40,13 +39,41 @@ Para salvar os projetos na comunidade os dados são salvos no navegador usando o
 <li>:small_blue_diamond: Lib dom-to-image</li>
 </ul>
 
-### :scroll: Como usar
+## :game_die: Rodando localmente
 
 + Primeiro, é necessário ter o node instalado.
 + Clone este repositório.
 + Execute `npm install` para instalar as dependências.
 
-### :smiley: Autor
+## :trophy: Badge
+           
+
+<table style="text-align: center;">
+  <tr>
+    <td>
+      <img height="150px" src="https://github.com/WSantos79/AluraDev/blob/main/assets/img/badge/Badge-participacao.png">
+    </td>
+    <td>
+      <img height="150px" src="https://github.com/WSantos79/AluraDev/blob/main/assets/img/badge/Badge-comunidade.png">
+    </td>
+    <td>
+    <img height="150px" src="https://github.com/WSantos79/AluraDev/blob/main/assets/img/badge/Badge-compartilhamento.png">
+    </td>
+    <td>
+    <img height="150px" src="https://github.com/WSantos79/AluraDev/blob/main/assets/img/badge/Badge-interacao.png?raw=true">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">Participação</td>
+    <td align="center">Apoio à Comunidade</td>
+    <td align="center">Compartilhamento</td>
+    <td align="center">Interação</td>
+  </tr>
+</table>
+
+
+
+## :smiley: Autor
 
 ## <a href="https://github.com/WSantos79">Wellington Santos 🚀</a>
 
