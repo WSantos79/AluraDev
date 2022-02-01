@@ -1,4 +1,4 @@
-# :star: AluraDev Challenge FrontEnd
+# <p align="center">:star: AluraDev Challenge FrontEnd</p>
 
 ## :mag: Veja o projeto online !
 
