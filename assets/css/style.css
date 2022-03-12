@@ -200,6 +200,7 @@ main .container {
   border: 1px solid;  
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
+  z-index: 2;
   
 }
 #tipoImg{  
@@ -210,6 +211,8 @@ main .container {
   border-end-end-radius: 4px;  
   border-top-right-radius: 4px; 
   padding: 3px 0;
+
+  text-align: end;
 
   cursor: pointer;
   position: absolute;
